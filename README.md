@@ -10,7 +10,7 @@ A co-op Roblox horror game for 1–6 players. Gather glowing mushrooms in a nigh
 ## Core loop
 
 1. **Gather (about 28 s):** explore the trails and collect mushrooms for points.
-2. **Warning (about 7 s):** the beat speeds up and the lamps flicker. Head for a safe light.
+2. **Warning (about 7 s):** the beat speeds up, the lamps flicker, and the hidden safe lights appear. Run for one.
 3. **Blackout (about 12 s):** the music cuts out. Only safe lights stay on, and the creature hunts anyone outside them.
 4. **Release (about 3 s):** the lights return and the next cycle starts.
 
@@ -35,14 +35,14 @@ A round is 4 cycles. Survive until dawn to earn a bonus. If you're caught, you s
 
 ## Status
 
-Prototype. The map blockout is generated, rounds loop through all phases with an on-screen countdown, and players can collect Mooncaps during Gather and Warning (checked by the server). Lighting changes come next. Round timers are halved for testing (`TimeScale` in `GameConfig`).
+Prototype. The map blockout is generated, rounds loop through all phases with an on-screen countdown, and players can collect Mooncaps during Gather and Warning (checked by the server). The scene is night with fog; path lamps flicker in Warning, go dark in Blackout and return on Release. Safe lights are hidden during Gather and appear only for Warning and Blackout. Safe-zone detection comes next. Round timers are halved for testing (`TimeScale` in `GameConfig`).
 
 ## Roadmap
 
 - [x] Map blockout (trails, camp, safe-light clearings)
 - [x] First mushroom pickup with a server-side score
 - [x] Round phases and HUD
-- [ ] Lighting that changes with each phase
+- [x] Lighting that changes with each phase
 - [ ] Safe-zone detection
 - [ ] Placeholder monster
 - [ ] Speed and shield mushrooms

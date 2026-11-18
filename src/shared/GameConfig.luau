@@ -6,7 +6,7 @@ local GameConfig = {
 	Debug = true,
 
 	-- Folders you build in Workspace (in Studio). Scripts find map objects by these names.
-	MapFolders = { "Map", "SafeZones", "MushroomSpawns" },
+	MapFolders = { "Map", "SafeZones", "MushroomSpawns", "PathLights" },
 
 	-- Mushroom pickup
 	PromptDistance = 8, -- how close (studs) the "Collect" prompt appears

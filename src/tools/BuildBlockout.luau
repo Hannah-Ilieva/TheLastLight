@@ -69,6 +69,20 @@ local MUSHROOM_SPAWNS = {
 	{ Name = "SouthTrail_1", X = 9, Z = 38, Type = "Mooncap" },
 }
 
+-- Path lamps (Workspace.PathLights) stand beside each trail spoke and go dark during Blackout.
+-- Distances are measured from the camp along the spoke; lamps alternate sides of the trail.
+local LAMPS = {
+	Distances = { 28, 44, 80 }, -- avoids the safe zones at 60 and the camp's edge at 15
+	SideOffset = 8.5, -- studs from the trail's centre line (just off the 12-wide trail)
+	Spokes = {
+		{ Name = "N", Direction = Vector2.new(0, -1) },
+		{ Name = "W", Direction = Vector2.new(-1, 0) },
+		{ Name = "E", Direction = Vector2.new(1, 0) },
+		{ Name = "S", Direction = Vector2.new(0, 1) },
+	},
+	LanternColor = Color3.fromRGB(255, 170, 90),
+}
+
 -- Trees grow in clusters. A fixed seed puts them in the same spots on every run.
 local TREES = {
 	Seed = 7,
@@ -283,6 +297,40 @@ local function buildMushroomSpawns(folder)
 	end
 end
 
+-- A lamp is a wooden post with a glowing lantern on top. The client's LightingController
+-- finds the "Lantern" part by name to switch it on and off.
+local function makeLamp(name, x, z, parent)
+	local lamp = Instance.new("Model")
+	lamp.Name = name
+	lamp.ModelStreamingMode = Enum.ModelStreamingMode.Persistent -- always loaded on every client
+	lamp.PrimaryPart = makePart({
+		Name = "Post", Size = Vector3.new(0.6, 8, 0.6), Position = Vector3.new(x, 4, z),
+		Material = Enum.Material.Wood, Color = COLOR.DarkWood,
+	}, lamp)
+	local lantern = makePart({
+		Name = "Lantern", Size = Vector3.new(1.4, 1.6, 1.4), Position = Vector3.new(x, 8.8, z),
+		Material = Enum.Material.Neon, Color = LAMPS.LanternColor, CanCollide = false,
+	}, lamp)
+	local light = Instance.new("PointLight")
+	light.Brightness = 1.5
+	light.Range = 18
+	light.Color = LAMPS.LanternColor
+	light.Parent = lantern
+	lamp:SetAttribute(GENERATED, true)
+	lamp.Parent = parent
+end
+
+local function buildPathLights(folder)
+	for _, spoke in LAMPS.Spokes do
+		local side = Vector2.new(-spoke.Direction.Y, spoke.Direction.X) -- points across the trail
+		for i, distance in LAMPS.Distances do
+			local sign = (i % 2 == 1) and 1 or -1 -- alternate sides
+			local spot = spoke.Direction * distance + side * LAMPS.SideOffset * sign
+			makeLamp("PathLamp_" .. spoke.Name .. i, spot.X, spot.Y, folder)
+		end
+	end
+end
+
 -- Studio's Baseplate template adds these. They would overlap the new ground and spawn.
 local function removeTemplateObjects()
 	for _, name in { "Baseplate", "SpawnLocation" } do
@@ -298,7 +346,8 @@ return function()
 	local map = getFolder(workspace, "Map")
 	local safeZones = getFolder(workspace, "SafeZones")
 	local mushroomSpawns = getFolder(workspace, "MushroomSpawns")
-	for _, container in { map, safeZones, mushroomSpawns } do
+	local pathLights = getFolder(workspace, "PathLights")
+	for _, container in { map, safeZones, mushroomSpawns, pathLights } do
 		clearGenerated(container)
 	end
 	removeTemplateObjects()
@@ -307,7 +356,9 @@ return function()
 	buildSafeZones(safeZones)
 	buildAreasAndLandmarks(map)
 	buildMushroomSpawns(mushroomSpawns)
+	buildPathLights(pathLights)
 	local treeCount = buildTrees(map)
 
-	print(("[BuildBlockout] Done: %d safe zones, %d mushroom spawns, %d trees. Save the place with Ctrl+S."):format(#SAFE_ZONES, #MUSHROOM_SPAWNS, treeCount))
+	print(("[BuildBlockout] Done: %d safe zones, %d mushroom spawns, %d lamps, %d trees. Save the place with Ctrl+S."):format(
+		#SAFE_ZONES, #MUSHROOM_SPAWNS, #pathLights:GetChildren(), treeCount))
 end
