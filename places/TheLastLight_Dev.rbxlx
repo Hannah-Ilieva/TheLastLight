@@ -14108,7 +14108,8 @@ log("Client started")
 				<Item class="ModuleScript" referent="RBXEE54AF2FEC0F43BF90AA7010CA533BFB">
 					<Properties>
 						<Content name="LinkedSource"><null></null></Content>
-						<ProtectedString name="Source"><![CDATA[-- HUDController: draws the round HUD (phase + countdown, night number, warning banner).
+						<ProtectedString name="Source"><![CDATA[-- HUDController: draws the round HUD (phase + countdown, night number, warning banner,
+-- and a "SAFE" label while the server says you are inside a safe light).
 -- It only DISPLAYS the round state that RoundService publishes on ReplicatedStorage;
 -- it never decides anything about the game.
 
@@ -14128,6 +14129,8 @@ local WARNING_MESSAGE = "The song is fading — find the light!"
 local BANNER_SECONDS = 3
 local TEXT_COLOR = Color3.fromRGB(235, 240, 230)
 local WARNING_COLOR = Color3.fromRGB(255, 200, 110)
+local SAFE_TEXT = "SAFE IN THE LIGHT"
+local SAFE_COLOR = Color3.fromRGB(255, 225, 150)
 
 local HUDController = {}
 
@@ -14175,6 +14178,22 @@ function HUDController.start()
 		TextColor3 = WARNING_COLOR,
 		Visible = false,
 	}, gui)
+	local safeLabel = newLabel("Safe", {
+		AnchorPoint = Vector2.new(0.5, 0),
+		Position = UDim2.new(0.5, 0, 0, 48),
+		Size = UDim2.new(0.4, 0, 0, 24),
+		Text = SAFE_TEXT,
+		TextColor3 = SAFE_COLOR,
+		Visible = false,
+	}, gui)
+
+	-- The server sets the "Safe" attribute on our Player; we only show it.
+	local player = Players.LocalPlayer
+	local function refreshSafe()
+		safeLabel.Visible = player:GetAttribute("Safe") == true
+	end
+	player:GetAttributeChangedSignal("Safe"):Connect(refreshSafe)
+	refreshSafe()
 
 	-- Recalculates the text from the current attributes.
 	local function refresh()
@@ -14278,8 +14297,9 @@ local FADE_SECONDS = {
 }
 local DEFAULT_FADE = 1.5
 
--- Phases in which the safe-light circles are shown, and how fast they appear.
-local SAFE_ZONE_PHASES = { Warning = true, Blackout = true }
+-- Safe-light circles are shown in GameConfig.SafeZonePhases (the same phases in which
+-- the server protects players).
+local SAFE_ZONE_PHASES = GameConfig.SafeZonePhases
 local SAFE_ZONE_TRANSPARENCY = 0.5 -- how see-through a shown circle is (1 = invisible)
 local SAFE_ZONE_REVEAL_SECONDS = 0.5
 
@@ -15055,6 +15075,10 @@ local GameConfig = {
 
 	-- Phases in which mushrooms can be collected.
 	CollectPhases = { Exploring = true, Warning = true },
+
+	-- Phases in which safe lights are SHOWN and PROTECT players. One setting for both,
+	-- so what players see always matches what the server checks.
+	SafeZonePhases = { Warning = true, Blackout = true },
 }
 
 return GameConfig
@@ -15164,7 +15188,7 @@ return {
 			<Item class="Script" referent="RBXCFBE06C74A444BECA4A43FB8E1A1FF54">
 				<Properties>
 					<ProtectedString name="Source"><![CDATA[-- Main: the starting point for all server-side game code.
--- It checks the map, sets up each player's score and starts the round loop.
+-- It checks the map, sets up each player's score and starts the game systems.
 
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -15172,18 +15196,14 @@ local GameConfig = require(ReplicatedStorage.Shared.GameConfig)
 local log = require(ReplicatedStorage.Shared.Log)
 local Score = require(script.Parent.Score)
 local RoundService = require(script.Parent.RoundService)
+local SafeZoneService = require(script.Parent.SafeZoneService)
 
--- Warns about any missing map folder, then reports how many safe zones exist.
+-- Warns about any map folder that is missing from Workspace.
 local function checkMap()
 	for _, folderName in GameConfig.MapFolders do
 		if not workspace:FindFirstChild(folderName) then
 			warn("[TheLastLight] Missing folder in Workspace: " .. folderName)
 		end
-	end
-
-	local safeZones = workspace:FindFirstChild("SafeZones")
-	if safeZones then
-		log("Safe zones found:", #safeZones:GetChildren())
 	end
 end
 
@@ -15194,6 +15214,7 @@ for _, player in Players:GetPlayers() do -- players who joined before this scrip
 	Score.setup(player)
 end
 
+SafeZoneService.start()
 RoundService.start() -- also spawns the mushrooms at the start of each round
 log("Server started")
 ]]></ProtectedString>
@@ -15498,6 +15519,101 @@ return RoundService
 					<int64 name="SourceAssetId">-1</int64>
 					<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 					<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00002138</UniqueId>
+				</Properties>
+			</Item>
+			<Item class="ModuleScript" referent="RBXA7381A2367104001A70A71C3041F67D3">
+				<Properties>
+					<Content name="LinkedSource"><null></null></Content>
+					<ProtectedString name="Source"><![CDATA[-- SafeZoneService: decides, on the server, who is standing inside a safe light.
+-- A player is safe when their HumanoidRootPart (the centre of the character) is inside
+-- one of the circles in Workspace.SafeZones, during a phase in GameConfig.SafeZonePhases.
+--
+-- The result is published as a "Safe" attribute on each Player so the HUD can show it.
+-- Other server scripts (the monster, later) call SafeZoneService.isPlayerSafe(player).
+
+local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local GameConfig = require(ReplicatedStorage.Shared.GameConfig)
+local log = require(ReplicatedStorage.Shared.Log)
+
+local CHECK_INTERVAL = 0.2 -- seconds between checks
+-- How far below or above a circle the character's centre may be and still count
+-- (the centre is about 3 studs above the ground, and players can jump).
+local HEIGHT_BELOW = 4
+local HEIGHT_ABOVE = 12
+
+local SafeZoneService = {}
+
+local zones = {} -- list of { center: Vector3, radius: number }
+
+-- Reads the circles once. The circles are cylinders lying flat, so their diameter is Size.Y.
+local function loadZones()
+	local folder = workspace:FindFirstChild("SafeZones")
+	if not folder then
+		return -- Main already warns about the missing folder
+	end
+	for _, disc in folder:GetChildren() do
+		if disc:IsA("BasePart") then
+			table.insert(zones, { center = disc.Position, radius = disc.Size.Y / 2 })
+		end
+	end
+end
+
+-- True if a world position is inside any safe circle (ignores the phase).
+function SafeZoneService.isInsideZone(position: Vector3): boolean
+	for _, zone in zones do
+		local offset = position - zone.center
+		local flatDistance = Vector2.new(offset.X, offset.Z).Magnitude
+		if flatDistance <= zone.radius and offset.Y >= -HEIGHT_BELOW and offset.Y <= HEIGHT_ABOVE then
+			return true
+		end
+	end
+	return false
+end
+
+-- True if the player is protected right now: protection is active and they are inside a circle.
+function SafeZoneService.isPlayerSafe(player: Player): boolean
+	if not GameConfig.SafeZonePhases[ReplicatedStorage:GetAttribute("Phase")] then
+		return false
+	end
+	local character = player.Character
+	local root = character and character:FindFirstChild("HumanoidRootPart")
+	return root ~= nil and SafeZoneService.isInsideZone(root.Position)
+end
+
+local function updatePlayers()
+	for _, player in Players:GetPlayers() do
+		local safe = SafeZoneService.isPlayerSafe(player)
+		if player:GetAttribute("Safe") ~= safe then
+			player:SetAttribute("Safe", safe)
+			log(player.Name, safe and "is safe" or "is not safe")
+		end
+	end
+end
+
+function SafeZoneService.start()
+	loadZones()
+	log("Safe zones loaded:", #zones)
+	task.spawn(function()
+		while true do
+			updatePlayers()
+			task.wait(CHECK_INTERVAL)
+		end
+	end)
+end
+
+return SafeZoneService
+]]></ProtectedString>
+					<string name="ScriptGuid">{56441453-7F56-481B-9DA2-F76ED2EFB281}</string>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
+					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+					<string name="Name">SafeZoneService</string>
+					<BinaryString name="SerializedOverrides"></BinaryString>
+					<int64 name="SourceAssetId">-1</int64>
+					<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
+					<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00003b0d</UniqueId>
 				</Properties>
 			</Item>
 		</Item>

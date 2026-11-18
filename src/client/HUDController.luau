@@ -1,4 +1,5 @@
--- HUDController: draws the round HUD (phase + countdown, night number, warning banner).
+-- HUDController: draws the round HUD (phase + countdown, night number, warning banner,
+-- and a "SAFE" label while the server says you are inside a safe light).
 -- It only DISPLAYS the round state that RoundService publishes on ReplicatedStorage;
 -- it never decides anything about the game.
 
@@ -18,6 +19,8 @@ local WARNING_MESSAGE = "The song is fading — find the light!"
 local BANNER_SECONDS = 3
 local TEXT_COLOR = Color3.fromRGB(235, 240, 230)
 local WARNING_COLOR = Color3.fromRGB(255, 200, 110)
+local SAFE_TEXT = "SAFE IN THE LIGHT"
+local SAFE_COLOR = Color3.fromRGB(255, 225, 150)
 
 local HUDController = {}
 
@@ -65,6 +68,22 @@ function HUDController.start()
 		TextColor3 = WARNING_COLOR,
 		Visible = false,
 	}, gui)
+	local safeLabel = newLabel("Safe", {
+		AnchorPoint = Vector2.new(0.5, 0),
+		Position = UDim2.new(0.5, 0, 0, 48),
+		Size = UDim2.new(0.4, 0, 0, 24),
+		Text = SAFE_TEXT,
+		TextColor3 = SAFE_COLOR,
+		Visible = false,
+	}, gui)
+
+	-- The server sets the "Safe" attribute on our Player; we only show it.
+	local player = Players.LocalPlayer
+	local function refreshSafe()
+		safeLabel.Visible = player:GetAttribute("Safe") == true
+	end
+	player:GetAttributeChangedSignal("Safe"):Connect(refreshSafe)
+	refreshSafe()
 
 	-- Recalculates the text from the current attributes.
 	local function refresh()

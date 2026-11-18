@@ -35,7 +35,7 @@ A round is 4 cycles. Survive until dawn to earn a bonus. If you're caught, you s
 
 ## Status
 
-Prototype. The map blockout is generated, rounds loop through all phases with an on-screen countdown, and players can collect Mooncaps during Gather and Warning (checked by the server). The scene is night with fog; path lamps flicker in Warning, go dark in Blackout and return on Release. Safe lights are hidden during Gather and appear only for Warning and Blackout. Safe-zone detection comes next. Round timers are halved for testing (`TimeScale` in `GameConfig`).
+Prototype. The map blockout is generated, rounds loop through all phases with an on-screen countdown, and players can collect Mooncaps during Gather and Warning (checked by the server). The scene is night with fog; path lamps flicker in Warning, go dark in Blackout and return on Release. Safe lights are hidden during Gather and appear only for Warning and Blackout, when the server checks who is standing inside one (shown as "SAFE" on the HUD). The monster comes next. Round timers are halved for testing (`TimeScale` in `GameConfig`).
 
 ## Roadmap
 
@@ -43,7 +43,7 @@ Prototype. The map blockout is generated, rounds loop through all phases with an
 - [x] First mushroom pickup with a server-side score
 - [x] Round phases and HUD
 - [x] Lighting that changes with each phase
-- [ ] Safe-zone detection
+- [x] Safe-zone detection
 - [ ] Placeholder monster
 - [ ] Speed and shield mushrooms
 - [ ] Art and sound pass

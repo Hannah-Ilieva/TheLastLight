@@ -27,6 +27,10 @@ local GameConfig = {
 
 	-- Phases in which mushrooms can be collected.
 	CollectPhases = { Exploring = true, Warning = true },
+
+	-- Phases in which safe lights are SHOWN and PROTECT players. One setting for both,
+	-- so what players see always matches what the server checks.
+	SafeZonePhases = { Warning = true, Blackout = true },
 }
 
 return GameConfig

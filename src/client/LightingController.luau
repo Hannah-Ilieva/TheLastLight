@@ -47,8 +47,9 @@ local FADE_SECONDS = {
 }
 local DEFAULT_FADE = 1.5
 
--- Phases in which the safe-light circles are shown, and how fast they appear.
-local SAFE_ZONE_PHASES = { Warning = true, Blackout = true }
+-- Safe-light circles are shown in GameConfig.SafeZonePhases (the same phases in which
+-- the server protects players).
+local SAFE_ZONE_PHASES = GameConfig.SafeZonePhases
 local SAFE_ZONE_TRANSPARENCY = 0.5 -- how see-through a shown circle is (1 = invisible)
 local SAFE_ZONE_REVEAL_SECONDS = 0.5
 
