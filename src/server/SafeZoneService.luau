@@ -34,11 +34,12 @@ local function loadZones()
 end
 
 -- True if a world position is inside any safe circle (ignores the phase).
-function SafeZoneService.isInsideZone(position: Vector3): boolean
+-- `margin` (optional) makes the circles count as that many studs larger.
+function SafeZoneService.isInsideZone(position: Vector3, margin: number?): boolean
 	for _, zone in zones do
 		local offset = position - zone.center
 		local flatDistance = Vector2.new(offset.X, offset.Z).Magnitude
-		if flatDistance <= zone.radius and offset.Y >= -HEIGHT_BELOW and offset.Y <= HEIGHT_ABOVE then
+		if flatDistance <= zone.radius + (margin or 0) and offset.Y >= -HEIGHT_BELOW and offset.Y <= HEIGHT_ABOVE then
 			return true
 		end
 	end

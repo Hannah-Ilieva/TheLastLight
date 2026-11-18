@@ -11,25 +11,49 @@ local GameConfig = require(ReplicatedStorage.Shared.GameConfig)
 local log = require(ReplicatedStorage.Shared.Log)
 local Score = require(script.Parent.Score)
 local MushroomService = require(script.Parent.MushroomService)
+local PlayerState = require(script.Parent.PlayerState)
+
+local CHECK_INTERVAL = 0.25 -- how often a phase checks whether everyone was caught
 
 local RoundService = {}
 
--- Announces a phase, then waits until it is over.
-local function runPhase(phase: string, cycle: number)
+-- Announces a phase, then waits until it is over. With `canEndEarly`, it stops as soon as
+-- every player has been caught and returns false.
+local function runPhase(phase: string, cycle: number, canEndEarly: boolean?): boolean
 	local duration = GameConfig.PhaseDurations[phase] * GameConfig.TimeScale
 	ReplicatedStorage:SetAttribute("Cycle", cycle)
 	ReplicatedStorage:SetAttribute("PhaseEndsAt", workspace:GetServerTimeNow() + duration)
 	ReplicatedStorage:SetAttribute("Phase", phase) -- set last: scripts react to this one changing
 	log(("Phase: %s (night %d, %.1fs)"):format(phase, cycle, duration))
-	task.wait(duration)
+
+	local endsAt = os.clock() + duration
+	while os.clock() < endsAt do
+		if canEndEarly and not PlayerState.anyoneLeft() then
+			return false
+		end
+		task.wait(math.min(CHECK_INTERVAL, endsAt - os.clock()))
+	end
+	return true
 end
 
--- Fresh mushrooms, scores back to 0, and everyone respawns at the trailhead.
+-- Fresh mushrooms, scores back to 0, nobody caught, everyone back at the trailhead.
 local function resetRound()
 	MushroomService.spawnAll()
 	for _, player in Players:GetPlayers() do
 		Score.reset(player)
-		player:LoadCharacter()
+	end
+	PlayerState.resetRound()
+end
+
+-- Plays every night of the round, stopping early if everyone is caught.
+local function runNights()
+	for cycle = 1, GameConfig.CyclesPerRound do
+		for _, phase in GameConfig.CyclePhases do
+			if not runPhase(phase, cycle, true) then
+				log("Everyone was caught - ending the round early")
+				return
+			end
+		end
 	end
 end
 
@@ -40,11 +64,7 @@ local function runRound()
 
 	resetRound()
 	runPhase("Lobby", 0)
-	for cycle = 1, GameConfig.CyclesPerRound do
-		for _, phase in GameConfig.CyclePhases do
-			runPhase(phase, cycle)
-		end
-	end
+	runNights()
 	runPhase("Results", 0)
 end
 

@@ -1,10 +1,11 @@
 -- HUDController: draws the round HUD (phase + countdown, night number, warning banner,
--- and a "SAFE" label while the server says you are inside a safe light).
+-- a "SAFE" label while the server says you are inside a safe light, and a caught message).
 -- It only DISPLAYS the round state that RoundService publishes on ReplicatedStorage;
 -- it never decides anything about the game.
 
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local TweenService = game:GetService("TweenService")
 local GameConfig = require(ReplicatedStorage.Shared.GameConfig)
 
 local PHASE_TEXT = {
@@ -21,6 +22,8 @@ local TEXT_COLOR = Color3.fromRGB(235, 240, 230)
 local WARNING_COLOR = Color3.fromRGB(255, 200, 110)
 local SAFE_TEXT = "SAFE IN THE LIGHT"
 local SAFE_COLOR = Color3.fromRGB(255, 225, 150)
+local CAUGHT_TEXT = "Caught in the dark — spectating until next round"
+local CAUGHT_FLASH_SECONDS = 0.8 -- a short fade from black, played once per catch
 
 local HUDController = {}
 
@@ -77,13 +80,38 @@ function HUDController.start()
 		Visible = false,
 	}, gui)
 
-	-- The server sets the "Safe" attribute on our Player; we only show it.
+	local caughtLabel = newLabel("Caught", {
+		AnchorPoint = Vector2.new(0.5, 1),
+		Position = UDim2.new(0.5, 0, 1, -40),
+		Size = UDim2.new(0.8, 0, 0, 30),
+		Text = CAUGHT_TEXT,
+		Visible = false,
+	}, gui)
+	local flash = Instance.new("Frame")
+	flash.Name = "CaughtFlash"
+	flash.Size = UDim2.fromScale(1, 1)
+	flash.BackgroundColor3 = Color3.new(0, 0, 0)
+	flash.BackgroundTransparency = 1
+	flash.ZIndex = 0 -- behind the text
+	flash.Parent = gui
+
+	-- The server sets "Safe" and "Caught" attributes on our Player; we only show them.
 	local player = Players.LocalPlayer
 	local function refreshSafe()
 		safeLabel.Visible = player:GetAttribute("Safe") == true
 	end
+	local function refreshCaught()
+		local caught = player:GetAttribute("Caught") == true
+		if caught and not caughtLabel.Visible then
+			flash.BackgroundTransparency = 0
+			TweenService:Create(flash, TweenInfo.new(CAUGHT_FLASH_SECONDS), { BackgroundTransparency = 1 }):Play()
+		end
+		caughtLabel.Visible = caught
+	end
 	player:GetAttributeChangedSignal("Safe"):Connect(refreshSafe)
+	player:GetAttributeChangedSignal("Caught"):Connect(refreshCaught)
 	refreshSafe()
+	refreshCaught()
 
 	-- Recalculates the text from the current attributes.
 	local function refresh()

@@ -6,7 +6,7 @@ local GameConfig = {
 	Debug = true,
 
 	-- Folders you build in Workspace (in Studio). Scripts find map objects by these names.
-	MapFolders = { "Map", "SafeZones", "MushroomSpawns", "PathLights" },
+	MapFolders = { "Map", "SafeZones", "MushroomSpawns", "PathLights", "MonsterSpawns" },
 
 	-- Mushroom pickup
 	PromptDistance = 8, -- how close (studs) the "Collect" prompt appears
@@ -31,6 +31,13 @@ local GameConfig = {
 	-- Phases in which safe lights are SHOWN and PROTECT players. One setting for both,
 	-- so what players see always matches what the server checks.
 	SafeZonePhases = { Warning = true, Blackout = true },
+
+	-- The monster hunts only during Blackout.
+	Monster = {
+		SpeedByNight = { 11, 13, 14, 15 }, -- studs per second; players walk at 16, so running away works
+		CatchDistance = 4, -- studs between the monster and a player for a catch
+		MinSpawnDistance = 35, -- it never appears closer than this to any player
+	},
 }
 
 return GameConfig

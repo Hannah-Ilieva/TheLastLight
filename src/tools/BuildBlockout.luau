@@ -69,6 +69,15 @@ local MUSHROOM_SPAWNS = {
 	{ Name = "SouthTrail_1", X = 9, Z = 38, Type = "Mooncap" },
 }
 
+-- Invisible dens where the monster can appear at the start of a Blackout (Workspace.MonsterSpawns).
+-- They sit in the forest between the trails, away from the safe lights.
+local MONSTER_DENS = {
+	{ Name = "Den_NW", X = -40, Z = -40 }, { Name = "Den_NE", X = 40, Z = -40 },
+	{ Name = "Den_SW", X = -40, Z = 40 }, { Name = "Den_SE", X = 40, Z = 40 },
+	{ Name = "Den_FarWest", X = -105, Z = -45 }, { Name = "Den_FarEast", X = 105, Z = 45 },
+	{ Name = "Den_FarNorth", X = 45, Z = -110 }, { Name = "Den_FarSouth", X = -45, Z = 110 },
+}
+
 -- Path lamps (Workspace.PathLights) stand beside each trail spoke and go dark during Blackout.
 -- Distances are measured from the camp along the spoke; lamps alternate sides of the trail.
 local LAMPS = {
@@ -286,14 +295,20 @@ local function buildTrees(map)
 	return #placed
 end
 
--- Markers are 1-stud invisible cubes resting on the ground; the server reads their position and type.
-local function buildMushroomSpawns(folder)
+-- A marker is a 1-stud invisible cube resting on the ground; the server reads its position.
+local function makeMarker(name, x, z, parent)
+	return makePart({
+		Name = name, Size = Vector3.one, Position = Vector3.new(x, 0.5, z),
+		Transparency = 1, CanCollide = false, CanQuery = false, CanTouch = false,
+	}, parent)
+end
+
+local function buildMarkers(mushroomFolder, denFolder)
 	for _, spawn in MUSHROOM_SPAWNS do
-		local marker = makePart({
-			Name = spawn.Name, Size = Vector3.one, Position = Vector3.new(spawn.X, 0.5, spawn.Z),
-			Transparency = 1, CanCollide = false, CanQuery = false, CanTouch = false,
-		}, folder)
-		marker:SetAttribute("MushroomType", spawn.Type)
+		makeMarker(spawn.Name, spawn.X, spawn.Z, mushroomFolder):SetAttribute("MushroomType", spawn.Type)
+	end
+	for _, den in MONSTER_DENS do
+		makeMarker(den.Name, den.X, den.Z, denFolder)
 	end
 end
 
@@ -347,7 +362,8 @@ return function()
 	local safeZones = getFolder(workspace, "SafeZones")
 	local mushroomSpawns = getFolder(workspace, "MushroomSpawns")
 	local pathLights = getFolder(workspace, "PathLights")
-	for _, container in { map, safeZones, mushroomSpawns, pathLights } do
+	local monsterSpawns = getFolder(workspace, "MonsterSpawns")
+	for _, container in { map, safeZones, mushroomSpawns, pathLights, monsterSpawns } do
 		clearGenerated(container)
 	end
 	removeTemplateObjects()
@@ -355,10 +371,10 @@ return function()
 	buildGround(map)
 	buildSafeZones(safeZones)
 	buildAreasAndLandmarks(map)
-	buildMushroomSpawns(mushroomSpawns)
+	buildMarkers(mushroomSpawns, monsterSpawns)
 	buildPathLights(pathLights)
 	local treeCount = buildTrees(map)
 
-	print(("[BuildBlockout] Done: %d safe zones, %d mushroom spawns, %d lamps, %d trees. Save the place with Ctrl+S."):format(
-		#SAFE_ZONES, #MUSHROOM_SPAWNS, #pathLights:GetChildren(), treeCount))
+	print(("[BuildBlockout] Done: %d safe zones, %d mushroom spawns, %d monster dens, %d lamps, %d trees. Save the place with Ctrl+S."):format(
+		#SAFE_ZONES, #MUSHROOM_SPAWNS, #MONSTER_DENS, #pathLights:GetChildren(), treeCount))
 end
