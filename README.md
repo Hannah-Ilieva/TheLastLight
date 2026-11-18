@@ -29,7 +29,9 @@ A round is 4 cycles. Survive until dawn to earn a bonus. If you're caught, you s
 - [Roblox Studio](https://create.roblox.com/) with [Rojo](https://rojo.space/) 7.7.1
 - Open `places/TheLastLight_Dev.rbxlx` in Studio, run `rojo serve` in this folder, and connect from the Rojo plugin.
 - Rojo syncs the code: `src/shared` → `ReplicatedStorage.Shared`, `src/server` → `ServerScriptService.Server`, `src/client` → `StarterPlayer.StarterPlayerScripts.Client`.
-- The map, lighting and visuals are built in Studio and saved in the place file, not synced by Rojo.
+- `src/tools` → `ServerStorage.Tools` holds Studio-only tools. To (re)build the map blockout, run this in Studio's Command Bar in edit mode, then save the place:
+  `require(game.ServerStorage.Tools.BuildBlockout:Clone())()`
+- The map, lighting and visuals are saved in the place file (`places/TheLastLight_Dev.rbxlx`), not synced by Rojo.
 
 ## Status
 
