@@ -4,6 +4,11 @@
 
 local Score = {}
 
+local function getPoints(player: Player): IntValue?
+	local leaderstats = player:FindFirstChild("leaderstats")
+	return leaderstats and leaderstats:FindFirstChild("Points")
+end
+
 function Score.setup(player: Player)
 	local leaderstats = Instance.new("Folder")
 	leaderstats.Name = "leaderstats"
@@ -16,9 +21,16 @@ function Score.setup(player: Player)
 end
 
 function Score.add(player: Player, amount: number)
-	local leaderstats = player:FindFirstChild("leaderstats")
-	if leaderstats then
-		leaderstats.Points.Value += amount
+	local points = getPoints(player)
+	if points then
+		points.Value += amount
+	end
+end
+
+function Score.reset(player: Player)
+	local points = getPoints(player)
+	if points then
+		points.Value = 0
 	end
 end
 

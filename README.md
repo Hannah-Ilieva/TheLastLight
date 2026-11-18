@@ -35,13 +35,13 @@ A round is 4 cycles. Survive until dawn to earn a bonus. If you're caught, you s
 
 ## Status
 
-Prototype. The map blockout is generated, and players can collect Mooncaps for points (checked by the server, shown in the player list). Round phases come next.
+Prototype. The map blockout is generated, rounds loop through all phases with an on-screen countdown, and players can collect Mooncaps during Gather and Warning (checked by the server). Lighting changes come next. Round timers are halved for testing (`TimeScale` in `GameConfig`).
 
 ## Roadmap
 
 - [x] Map blockout (trails, camp, safe-light clearings)
 - [x] First mushroom pickup with a server-side score
-- [ ] Round phases and HUD
+- [x] Round phases and HUD
 - [ ] Lighting that changes with each phase
 - [ ] Safe-zone detection
 - [ ] Placeholder monster

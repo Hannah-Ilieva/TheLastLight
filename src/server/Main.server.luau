@@ -1,12 +1,12 @@
 -- Main: the starting point for all server-side game code.
--- It checks the map, sets up each player's score and spawns the mushrooms.
+-- It checks the map, sets up each player's score and starts the round loop.
 
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local GameConfig = require(ReplicatedStorage.Shared.GameConfig)
 local log = require(ReplicatedStorage.Shared.Log)
 local Score = require(script.Parent.Score)
-local MushroomService = require(script.Parent.MushroomService)
+local RoundService = require(script.Parent.RoundService)
 
 -- Warns about any missing map folder, then reports how many safe zones exist.
 local function checkMap()
@@ -29,5 +29,5 @@ for _, player in Players:GetPlayers() do -- players who joined before this scrip
 	Score.setup(player)
 end
 
-MushroomService.spawnAll()
+RoundService.start() -- also spawns the mushrooms at the start of each round
 log("Server started")

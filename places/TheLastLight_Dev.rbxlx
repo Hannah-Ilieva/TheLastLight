@@ -10834,7 +10834,9 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local log = require(ReplicatedStorage.Shared.Log)
+local HUDController = require(script.Parent.HUDController)
 
+HUDController.start()
 log("Client started")
 ]]></ProtectedString>
 						<bool name="Disabled">false</bool>
@@ -10850,6 +10852,127 @@ log("Client started")
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00000c36</UniqueId>
+					</Properties>
+				</Item>
+				<Item class="ModuleScript" referent="RBXEE54AF2FEC0F43BF90AA7010CA533BFB">
+					<Properties>
+						<Content name="LinkedSource"><null></null></Content>
+						<ProtectedString name="Source"><![CDATA[-- HUDController: draws the round HUD (phase + countdown, night number, warning banner).
+-- It only DISPLAYS the round state that RoundService publishes on ReplicatedStorage;
+-- it never decides anything about the game.
+
+local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local GameConfig = require(ReplicatedStorage.Shared.GameConfig)
+
+local PHASE_TEXT = {
+	Lobby = "GET READY",
+	Exploring = "GATHER",
+	Warning = "FIND THE LIGHT",
+	Blackout = "BLACKOUT",
+	Release = "THE LIGHT RETURNS",
+	Results = "DAWN",
+}
+local WARNING_MESSAGE = "The song is fading — find the light!"
+local BANNER_SECONDS = 3
+local TEXT_COLOR = Color3.fromRGB(235, 240, 230)
+local WARNING_COLOR = Color3.fromRGB(255, 200, 110)
+
+local HUDController = {}
+
+-- Creates a transparent, auto-scaling text label. `props` sets position and size.
+local function newLabel(name: string, props, parent: Instance): TextLabel
+	local label = Instance.new("TextLabel")
+	label.Name = name
+	label.BackgroundTransparency = 1
+	label.Font = Enum.Font.GothamBold
+	label.TextColor3 = TEXT_COLOR
+	label.TextStrokeTransparency = 0.4 -- dark outline keeps text readable on bright areas
+	label.TextScaled = true
+	for key, value in props do
+		label[key] = value
+	end
+	label.Parent = parent
+	return label
+end
+
+local function formatTime(seconds: number): string
+	return ("%d:%02d"):format(seconds // 60, seconds % 60)
+end
+
+function HUDController.start()
+	local gui = Instance.new("ScreenGui")
+	gui.Name = "RoundHUD"
+	gui.ResetOnSpawn = false -- keep the HUD when the character respawns
+	gui.Parent = Players.LocalPlayer:WaitForChild("PlayerGui")
+
+	local phaseLabel = newLabel("Phase", {
+		AnchorPoint = Vector2.new(0.5, 0),
+		Position = UDim2.new(0.5, 0, 0, 8),
+		Size = UDim2.new(0.6, 0, 0, 36),
+	}, gui)
+	local nightLabel = newLabel("Night", {
+		Position = UDim2.new(0, 16, 0, 8),
+		Size = UDim2.new(0.25, 0, 0, 28),
+		TextXAlignment = Enum.TextXAlignment.Left,
+	}, gui)
+	local banner = newLabel("WarningBanner", {
+		AnchorPoint = Vector2.new(0.5, 0.5),
+		Position = UDim2.new(0.5, 0, 0.3, 0),
+		Size = UDim2.new(0.8, 0, 0, 48),
+		Text = WARNING_MESSAGE,
+		TextColor3 = WARNING_COLOR,
+		Visible = false,
+	}, gui)
+
+	-- Recalculates the text from the current attributes.
+	local function refresh()
+		local phase = ReplicatedStorage:GetAttribute("Phase")
+		if not phase then
+			phaseLabel.Text = "Waiting for server..."
+			return
+		end
+		local endsAt = ReplicatedStorage:GetAttribute("PhaseEndsAt") or 0
+		local remaining = math.max(0, math.ceil(endsAt - workspace:GetServerTimeNow()))
+		phaseLabel.Text = (PHASE_TEXT[phase] or phase) .. " — " .. formatTime(remaining)
+		phaseLabel.TextColor3 = (phase == "Warning" or phase == "Blackout") and WARNING_COLOR or TEXT_COLOR
+
+		local cycle = ReplicatedStorage:GetAttribute("Cycle") or 0
+		nightLabel.Visible = cycle > 0
+		nightLabel.Text = ("NIGHT %d / %d"):format(cycle, GameConfig.CyclesPerRound)
+	end
+
+	ReplicatedStorage:GetAttributeChangedSignal("Phase"):Connect(function()
+		refresh()
+		if ReplicatedStorage:GetAttribute("Phase") == "Warning" then
+			banner.Visible = true
+			task.delay(BANNER_SECONDS, function()
+				banner.Visible = false
+			end)
+		end
+	end)
+
+	-- Update the countdown a few times per second.
+	task.spawn(function()
+		while true do
+			refresh()
+			task.wait(0.25)
+		end
+	end)
+end
+
+return HUDController
+]]></ProtectedString>
+						<string name="ScriptGuid">{FFDB2DD0-3A4C-43F3-835E-15832B213B99}</string>
+						<BinaryString name="AttributesSerialize"></BinaryString>
+						<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+						<bool name="DefinesCapabilities">false</bool>
+						<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+						<string name="Name">HUDController</string>
+						<BinaryString name="SerializedOverrides"></BinaryString>
+						<int64 name="SourceAssetId">-1</int64>
+						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad0000213a</UniqueId>
 					</Properties>
 				</Item>
 			</Item>
@@ -11486,6 +11609,22 @@ local GameConfig = {
 	-- Mushroom pickup
 	PromptDistance = 8, -- how close (studs) the "Collect" prompt appears
 	CollectDistance = 12, -- server-side limit; a bit larger than PromptDistance to allow for lag
+
+	-- Round timing, in seconds. A round is Lobby, then CyclesPerRound cycles, then Results.
+	TimeScale = 0.5, -- TEMPORARY for testing: halves every duration. Set to 1 for real rounds.
+	PhaseDurations = {
+		Lobby = 15,
+		Exploring = 28,
+		Warning = 7,
+		Blackout = 12,
+		Release = 3,
+		Results = 10,
+	},
+	CyclePhases = { "Exploring", "Warning", "Blackout", "Release" }, -- order within one cycle
+	CyclesPerRound = 4,
+
+	-- Phases in which mushrooms can be collected.
+	CollectPhases = { Exploring = true, Warning = true },
 }
 
 return GameConfig
@@ -11595,14 +11734,14 @@ return {
 			<Item class="Script" referent="RBXCFBE06C74A444BECA4A43FB8E1A1FF54">
 				<Properties>
 					<ProtectedString name="Source"><![CDATA[-- Main: the starting point for all server-side game code.
--- It checks the map, sets up each player's score and spawns the mushrooms.
+-- It checks the map, sets up each player's score and starts the round loop.
 
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local GameConfig = require(ReplicatedStorage.Shared.GameConfig)
 local log = require(ReplicatedStorage.Shared.Log)
 local Score = require(script.Parent.Score)
-local MushroomService = require(script.Parent.MushroomService)
+local RoundService = require(script.Parent.RoundService)
 
 -- Warns about any missing map folder, then reports how many safe zones exist.
 local function checkMap()
@@ -11625,7 +11764,7 @@ for _, player in Players:GetPlayers() do -- players who joined before this scrip
 	Score.setup(player)
 end
 
-MushroomService.spawnAll()
+RoundService.start() -- also spawns the mushrooms at the start of each round
 log("Server started")
 ]]></ProtectedString>
 					<bool name="Disabled">false</bool>
@@ -11652,6 +11791,11 @@ log("Server started")
 
 local Score = {}
 
+local function getPoints(player: Player): IntValue?
+	local leaderstats = player:FindFirstChild("leaderstats")
+	return leaderstats and leaderstats:FindFirstChild("Points")
+end
+
 function Score.setup(player: Player)
 	local leaderstats = Instance.new("Folder")
 	leaderstats.Name = "leaderstats"
@@ -11664,9 +11808,16 @@ function Score.setup(player: Player)
 end
 
 function Score.add(player: Player, amount: number)
-	local leaderstats = player:FindFirstChild("leaderstats")
-	if leaderstats then
-		leaderstats.Points.Value += amount
+	local points = getPoints(player)
+	if points then
+		points.Value += amount
+	end
+end
+
+function Score.reset(player: Player)
+	local points = getPoints(player)
+	if points then
+		points.Value = 0
 	end
 end
 
@@ -11741,6 +11892,11 @@ local function buildMushroom(config, groundPosition: Vector3): Model
 	return model
 end
 
+-- True during the phases listed in GameConfig.CollectPhases (RoundService sets the phase).
+local function isCollectPhase(): boolean
+	return GameConfig.CollectPhases[ReplicatedStorage:GetAttribute("Phase")] == true
+end
+
 -- True if the player is alive and standing close enough to the mushroom.
 local function canReach(player: Player, position: Vector3): boolean
 	local character = player.Character
@@ -11757,10 +11913,9 @@ local function onCollect(player: Player, model: Model, config)
 	if not model.Parent then
 		return
 	end
-	if not canReach(player, model.PrimaryPart.Position) then
+	if not isCollectPhase() or not canReach(player, model.PrimaryPart.Position) then
 		return
 	end
-	-- Milestone 3 adds: only allow collecting during the gather phases.
 
 	model:Destroy()
 	Score.add(player, config.Points)
@@ -11783,6 +11938,7 @@ local function spawnAt(marker: BasePart)
 	prompt.ObjectText = config.DisplayName
 	prompt.MaxActivationDistance = GameConfig.PromptDistance
 	prompt.RequiresLineOfSight = false
+	prompt.Enabled = isCollectPhase()
 	prompt.Parent = model.PrimaryPart
 	prompt.Triggered:Connect(function(player)
 		onCollect(player, model, config)
@@ -11810,6 +11966,20 @@ function MushroomService.spawnAll()
 	log("Mushrooms spawned:", #activeFolder:GetChildren())
 end
 
+-- Show the "Collect" prompts only while collecting is allowed. This is just for
+-- clarity on screen; onCollect still checks the phase, so it stays secure.
+ReplicatedStorage:GetAttributeChangedSignal("Phase"):Connect(function()
+	if not activeFolder then
+		return
+	end
+	local enabled = isCollectPhase()
+	for _, item in activeFolder:GetDescendants() do
+		if item:IsA("ProximityPrompt") then
+			item.Enabled = enabled
+		end
+	end
+end)
+
 return MushroomService
 ]]></ProtectedString>
 					<string name="ScriptGuid">{FA6BEB20-F77C-4ABD-B480-4161C872CDB9}</string>
@@ -11822,6 +11992,82 @@ return MushroomService
 					<int64 name="SourceAssetId">-1</int64>
 					<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 					<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c3a</UniqueId>
+				</Properties>
+			</Item>
+			<Item class="ModuleScript" referent="RBXE81AA0F448A84368B07876BA14A447FA">
+				<Properties>
+					<Content name="LinkedSource"><null></null></Content>
+					<ProtectedString name="Source"><![CDATA[-- RoundService: owns the round timer. It is the ONLY script that changes the phase.
+-- It publishes the round state as attributes on ReplicatedStorage, which every
+-- client can read (including players who join mid-round):
+--   Phase        current phase name, e.g. "Exploring"
+--   Cycle        current night (1-4), or 0 during Lobby and Results
+--   PhaseEndsAt  server time when the phase ends (compare with workspace:GetServerTimeNow())
+
+local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local GameConfig = require(ReplicatedStorage.Shared.GameConfig)
+local log = require(ReplicatedStorage.Shared.Log)
+local Score = require(script.Parent.Score)
+local MushroomService = require(script.Parent.MushroomService)
+
+local RoundService = {}
+
+-- Announces a phase, then waits until it is over.
+local function runPhase(phase: string, cycle: number)
+	local duration = GameConfig.PhaseDurations[phase] * GameConfig.TimeScale
+	ReplicatedStorage:SetAttribute("Cycle", cycle)
+	ReplicatedStorage:SetAttribute("PhaseEndsAt", workspace:GetServerTimeNow() + duration)
+	ReplicatedStorage:SetAttribute("Phase", phase) -- set last: scripts react to this one changing
+	log(("Phase: %s (night %d, %.1fs)"):format(phase, cycle, duration))
+	task.wait(duration)
+end
+
+-- Fresh mushrooms, scores back to 0, and everyone respawns at the trailhead.
+local function resetRound()
+	MushroomService.spawnAll()
+	for _, player in Players:GetPlayers() do
+		Score.reset(player)
+		player:LoadCharacter()
+	end
+end
+
+local function runRound()
+	while #Players:GetPlayers() == 0 do
+		Players.PlayerAdded:Wait()
+	end
+
+	resetRound()
+	runPhase("Lobby", 0)
+	for cycle = 1, GameConfig.CyclesPerRound do
+		for _, phase in GameConfig.CyclePhases do
+			runPhase(phase, cycle)
+		end
+	end
+	runPhase("Results", 0)
+end
+
+-- Starts the endless round loop in the background.
+function RoundService.start()
+	task.spawn(function()
+		while true do
+			runRound()
+		end
+	end)
+end
+
+return RoundService
+]]></ProtectedString>
+					<string name="ScriptGuid">{D2D590F2-573A-470B-AAE1-E8EF9F699825}</string>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
+					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+					<string name="Name">RoundService</string>
+					<BinaryString name="SerializedOverrides"></BinaryString>
+					<int64 name="SourceAssetId">-1</int64>
+					<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
+					<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00002138</UniqueId>
 				</Properties>
 			</Item>
 		</Item>

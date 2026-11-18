@@ -3,5 +3,7 @@
 
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local log = require(ReplicatedStorage.Shared.Log)
+local HUDController = require(script.Parent.HUDController)
 
+HUDController.start()
 log("Client started")

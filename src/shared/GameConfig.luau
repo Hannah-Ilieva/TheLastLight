@@ -11,6 +11,22 @@ local GameConfig = {
 	-- Mushroom pickup
 	PromptDistance = 8, -- how close (studs) the "Collect" prompt appears
 	CollectDistance = 12, -- server-side limit; a bit larger than PromptDistance to allow for lag
+
+	-- Round timing, in seconds. A round is Lobby, then CyclesPerRound cycles, then Results.
+	TimeScale = 0.5, -- TEMPORARY for testing: halves every duration. Set to 1 for real rounds.
+	PhaseDurations = {
+		Lobby = 15,
+		Exploring = 28,
+		Warning = 7,
+		Blackout = 12,
+		Release = 3,
+		Results = 10,
+	},
+	CyclePhases = { "Exploring", "Warning", "Blackout", "Release" }, -- order within one cycle
+	CyclesPerRound = 4,
+
+	-- Phases in which mushrooms can be collected.
+	CollectPhases = { Exploring = true, Warning = true },
 }
 
 return GameConfig

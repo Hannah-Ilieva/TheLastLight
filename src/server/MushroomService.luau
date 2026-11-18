@@ -52,6 +52,11 @@ local function buildMushroom(config, groundPosition: Vector3): Model
 	return model
 end
 
+-- True during the phases listed in GameConfig.CollectPhases (RoundService sets the phase).
+local function isCollectPhase(): boolean
+	return GameConfig.CollectPhases[ReplicatedStorage:GetAttribute("Phase")] == true
+end
+
 -- True if the player is alive and standing close enough to the mushroom.
 local function canReach(player: Player, position: Vector3): boolean
 	local character = player.Character
@@ -68,10 +73,9 @@ local function onCollect(player: Player, model: Model, config)
 	if not model.Parent then
 		return
 	end
-	if not canReach(player, model.PrimaryPart.Position) then
+	if not isCollectPhase() or not canReach(player, model.PrimaryPart.Position) then
 		return
 	end
-	-- Milestone 3 adds: only allow collecting during the gather phases.
 
 	model:Destroy()
 	Score.add(player, config.Points)
@@ -94,6 +98,7 @@ local function spawnAt(marker: BasePart)
 	prompt.ObjectText = config.DisplayName
 	prompt.MaxActivationDistance = GameConfig.PromptDistance
 	prompt.RequiresLineOfSight = false
+	prompt.Enabled = isCollectPhase()
 	prompt.Parent = model.PrimaryPart
 	prompt.Triggered:Connect(function(player)
 		onCollect(player, model, config)
@@ -120,5 +125,19 @@ function MushroomService.spawnAll()
 	end
 	log("Mushrooms spawned:", #activeFolder:GetChildren())
 end
+
+-- Show the "Collect" prompts only while collecting is allowed. This is just for
+-- clarity on screen; onCollect still checks the phase, so it stays secure.
+ReplicatedStorage:GetAttributeChangedSignal("Phase"):Connect(function()
+	if not activeFolder then
+		return
+	end
+	local enabled = isCollectPhase()
+	for _, item in activeFolder:GetDescendants() do
+		if item:IsA("ProximityPrompt") then
+			item.Enabled = enabled
+		end
+	end
+end)
 
 return MushroomService
