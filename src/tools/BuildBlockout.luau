@@ -61,6 +61,14 @@ local LANDMARKS = {
 	},
 }
 
+-- Invisible markers where the server spawns mushrooms each round (Workspace.MushroomSpawns).
+-- Type must match a key in src/shared/MushroomConfig.luau.
+local MUSHROOM_SPAWNS = {
+	{ Name = "WestGrove_1", X = -86, Z = 9, Type = "Mooncap" },
+	{ Name = "WestGrove_2", X = -100, Z = -8, Type = "Mooncap" },
+	{ Name = "SouthTrail_1", X = 9, Z = 38, Type = "Mooncap" },
+}
+
 -- Trees grow in clusters. A fixed seed puts them in the same spots on every run.
 local TREES = {
 	Seed = 7,
@@ -264,6 +272,17 @@ local function buildTrees(map)
 	return #placed
 end
 
+-- Markers are 1-stud invisible cubes resting on the ground; the server reads their position and type.
+local function buildMushroomSpawns(folder)
+	for _, spawn in MUSHROOM_SPAWNS do
+		local marker = makePart({
+			Name = spawn.Name, Size = Vector3.one, Position = Vector3.new(spawn.X, 0.5, spawn.Z),
+			Transparency = 1, CanCollide = false, CanQuery = false, CanTouch = false,
+		}, folder)
+		marker:SetAttribute("MushroomType", spawn.Type)
+	end
+end
+
 -- Studio's Baseplate template adds these. They would overlap the new ground and spawn.
 local function removeTemplateObjects()
 	for _, name in { "Baseplate", "SpawnLocation" } do
@@ -278,14 +297,17 @@ end
 return function()
 	local map = getFolder(workspace, "Map")
 	local safeZones = getFolder(workspace, "SafeZones")
-	clearGenerated(map)
-	clearGenerated(safeZones)
+	local mushroomSpawns = getFolder(workspace, "MushroomSpawns")
+	for _, container in { map, safeZones, mushroomSpawns } do
+		clearGenerated(container)
+	end
 	removeTemplateObjects()
 
 	buildGround(map)
 	buildSafeZones(safeZones)
 	buildAreasAndLandmarks(map)
+	buildMushroomSpawns(mushroomSpawns)
 	local treeCount = buildTrees(map)
 
-	print(("[BuildBlockout] Done: %d safe zones, %d trees. Save the place with Ctrl+S."):format(#SAFE_ZONES, treeCount))
+	print(("[BuildBlockout] Done: %d safe zones, %d mushroom spawns, %d trees. Save the place with Ctrl+S."):format(#SAFE_ZONES, #MUSHROOM_SPAWNS, treeCount))
 end

@@ -2,8 +2,6 @@
 -- (HUD, sounds, visual effects). Gameplay decisions stay on the server.
 
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local GameConfig = require(ReplicatedStorage.Shared.GameConfig)
+local log = require(ReplicatedStorage.Shared.Log)
 
-if GameConfig.Debug then
-	print("[TheLastLight] Client started")
-end
+log("Client started")

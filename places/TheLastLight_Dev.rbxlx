@@ -340,7 +340,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 					<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 					<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00000d08</UniqueId>
 				</Properties>
-				<Item class="Part" referent="RBX5A06C0E871254FA1BCA50E4A811F62C4">
+				<Item class="Part" referent="RBXE872387BC3A6410788EFAF1B1132518C">
 					<Properties>
 						<token name="shape">1</token>
 						<token name="formFactorRaw">1</token>
@@ -439,10 +439,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001367</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c3f</UniqueId>
 					</Properties>
 				</Item>
-				<Item class="Part" referent="RBX7193E4DD1B2A45FBAFF9546F5A6F3986">
+				<Item class="Part" referent="RBX37FF5488846545EFBAD1A4457FE84BEF">
 					<Properties>
 						<token name="shape">1</token>
 						<token name="formFactorRaw">1</token>
@@ -541,7 +541,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001368</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c40</UniqueId>
 					</Properties>
 				</Item>
 			</Item>
@@ -565,7 +565,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 					<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 					<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00000d15</UniqueId>
 				</Properties>
-				<Item class="Part" referent="RBXEA6025637655410D83A9A395E82D9572">
+				<Item class="Part" referent="RBX9441A6F8F42A43FC8338C6225513E544">
 					<Properties>
 						<token name="shape">2</token>
 						<token name="formFactorRaw">1</token>
@@ -664,10 +664,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001373</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c4b</UniqueId>
 					</Properties>
 				</Item>
-				<Item class="Part" referent="RBXBFC7563DC0F342C9B81139DCBADD9224">
+				<Item class="Part" referent="RBXEBD512E6E9AA467CA2F78AC2CE1D2154">
 					<Properties>
 						<token name="shape">2</token>
 						<token name="formFactorRaw">1</token>
@@ -766,7 +766,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad0000137d</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c55</UniqueId>
 					</Properties>
 				</Item>
 			</Item>
@@ -790,7 +790,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 					<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 					<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00000d17</UniqueId>
 				</Properties>
-				<Item class="Part" referent="RBXE7D12FA0582A4831A2CC58D5C37694FA">
+				<Item class="Part" referent="RBX32CA82B22D404C73B27431D76647AB52">
 					<Properties>
 						<token name="shape">2</token>
 						<token name="formFactorRaw">1</token>
@@ -889,10 +889,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001374</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c4c</UniqueId>
 					</Properties>
 				</Item>
-				<Item class="Part" referent="RBX04526BC97A7247229B9E239F78208FE0">
+				<Item class="Part" referent="RBXBB279F9A7C9647E29A7DF5D540F62897">
 					<Properties>
 						<token name="shape">2</token>
 						<token name="formFactorRaw">1</token>
@@ -991,7 +991,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad0000137f</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c57</UniqueId>
 					</Properties>
 				</Item>
 			</Item>
@@ -1015,7 +1015,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 					<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 					<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00000d19</UniqueId>
 				</Properties>
-				<Item class="Part" referent="RBXC8893D87B2D74C04B838AC8A12AA7BB5">
+				<Item class="Part" referent="RBX042E1A30FED54DFC913C1676F6F6B226">
 					<Properties>
 						<token name="shape">2</token>
 						<token name="formFactorRaw">1</token>
@@ -1114,10 +1114,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001375</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c4d</UniqueId>
 					</Properties>
 				</Item>
-				<Item class="Part" referent="RBX7314BDCDD3D94262942DCCAE78430B7A">
+				<Item class="Part" referent="RBX26E0F03CDC7E4D05AA89D3E1B6A04B4A">
 					<Properties>
 						<token name="shape">1</token>
 						<token name="formFactorRaw">1</token>
@@ -1216,7 +1216,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad0000137e</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c56</UniqueId>
 					</Properties>
 				</Item>
 			</Item>
@@ -1240,7 +1240,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 					<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 					<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00000d1b</UniqueId>
 				</Properties>
-				<Item class="Part" referent="RBXAEE7FEF94314468C94F94170FB5B8454">
+				<Item class="Part" referent="RBXC116A51B8FA749CC862F3C6130144AF8">
 					<Properties>
 						<token name="shape">1</token>
 						<token name="formFactorRaw">1</token>
@@ -1339,10 +1339,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001376</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c4e</UniqueId>
 					</Properties>
 				</Item>
-				<Item class="Part" referent="RBX82EF7D21E4BB4A4C8911AF320C1E05F7">
+				<Item class="Part" referent="RBX5FBD83E7F06248038E000449005065C2">
 					<Properties>
 						<token name="shape">1</token>
 						<token name="formFactorRaw">1</token>
@@ -1441,10 +1441,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001377</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c4f</UniqueId>
 					</Properties>
 				</Item>
-				<Item class="Part" referent="RBX7A157133EBEB4127B376AF92051CA18F">
+				<Item class="Part" referent="RBX3919669494DB4B579D8AA80DFC6C51AC">
 					<Properties>
 						<token name="shape">1</token>
 						<token name="formFactorRaw">1</token>
@@ -1543,10 +1543,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001378</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c50</UniqueId>
 					</Properties>
 				</Item>
-				<Item class="Part" referent="RBX13FE4FFF8C524D7A9EC3E624EFA6537E">
+				<Item class="Part" referent="RBXBC60F730DC5E42248038F8D06DF8E195">
 					<Properties>
 						<token name="shape">1</token>
 						<token name="formFactorRaw">1</token>
@@ -1645,7 +1645,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001379</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c51</UniqueId>
 					</Properties>
 				</Item>
 			</Item>
@@ -1669,7 +1669,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 					<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 					<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00000d20</UniqueId>
 				</Properties>
-				<Item class="Part" referent="RBXF86D0856CCE24B96ABFCE630367D0F73">
+				<Item class="Part" referent="RBXEF4FEF79EBDA4A2E861AACFB2B789645">
 					<Properties>
 						<token name="shape">1</token>
 						<token name="formFactorRaw">1</token>
@@ -1768,10 +1768,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad0000137a</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c52</UniqueId>
 					</Properties>
 				</Item>
-				<Item class="Part" referent="RBX3D127D4349C54CEAA4A4978BF6CF7E1C">
+				<Item class="Part" referent="RBX07E94CEDF4BE433F85B02FB9F2F07BCF">
 					<Properties>
 						<token name="shape">1</token>
 						<token name="formFactorRaw">1</token>
@@ -1870,10 +1870,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad0000137b</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c53</UniqueId>
 					</Properties>
 				</Item>
-				<Item class="Part" referent="RBX0935A5960A944B8EBEAAAEEC45D653C4">
+				<Item class="Part" referent="RBX108C4BFD032F4E6D9D84872F6458770F">
 					<Properties>
 						<token name="shape">1</token>
 						<token name="formFactorRaw">1</token>
@@ -1972,10 +1972,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad0000137c</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c54</UniqueId>
 					</Properties>
 				</Item>
-				<Item class="SpawnLocation" referent="RBXBD15CACAD2A04BE98EE15956C7315FDB">
+				<Item class="SpawnLocation" referent="RBXD075EB1309FC4A6283B005F1040FC560">
 					<Properties>
 						<bool name="AllowTeamChangeOnTouch">false</bool>
 						<int name="Duration">10</int>
@@ -2079,7 +2079,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001380</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c58</UniqueId>
 					</Properties>
 				</Item>
 			</Item>
@@ -2103,7 +2103,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 					<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 					<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00000d28</UniqueId>
 				</Properties>
-				<Item class="Model" referent="RBX025174D660684231AC9302A0727506EC">
+				<Item class="Model" referent="RBXAED618AF5F904708B9F35A2AA23BE4B3">
 					<Properties>
 						<Content name="ExplorerIconContent">
 							<null></null>
@@ -2131,7 +2131,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						</Vector3>
 						<token name="ModelStreamingMode">0</token>
 						<bool name="NeedsPivotMigration">false</bool>
-						<Ref name="PrimaryPart">RBXEE402CDC696249F69ADD489DBC37FBBA</Ref>
+						<Ref name="PrimaryPart">RBX3BC0FDBF46604FEC822154ABB3E2E04C</Ref>
 						<float name="ScaleFactor">1</float>
 						<SharedString name="SlimHash">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						<OptionalCoordinateFrame name="WorldPivotData"></OptionalCoordinateFrame>
@@ -2143,9 +2143,9 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001381</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c5c</UniqueId>
 					</Properties>
-					<Item class="Part" referent="RBXEE402CDC696249F69ADD489DBC37FBBA">
+					<Item class="Part" referent="RBX3BC0FDBF46604FEC822154ABB3E2E04C">
 						<Properties>
 							<token name="shape">2</token>
 							<token name="formFactorRaw">1</token>
@@ -2244,10 +2244,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001382</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c5d</UniqueId>
 						</Properties>
 					</Item>
-					<Item class="Part" referent="RBX481C7F06E67B4C6587D1683062F955AD">
+					<Item class="Part" referent="RBX225D94A301494AF198678D97EA34EF43">
 						<Properties>
 							<token name="shape">0</token>
 							<token name="formFactorRaw">1</token>
@@ -2346,11 +2346,11 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001383</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c5e</UniqueId>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="Model" referent="RBX8B473633E3614D878DB4E7003747ABF8">
+				<Item class="Model" referent="RBX9D4BA327555149D8B3DFB39D2269276E">
 					<Properties>
 						<Content name="ExplorerIconContent">
 							<null></null>
@@ -2378,7 +2378,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						</Vector3>
 						<token name="ModelStreamingMode">0</token>
 						<bool name="NeedsPivotMigration">false</bool>
-						<Ref name="PrimaryPart">RBXAA30F080F9D14AE1A4305421193AD967</Ref>
+						<Ref name="PrimaryPart">RBX9891AF5879094A7589BF1C90924FDEA1</Ref>
 						<float name="ScaleFactor">1</float>
 						<SharedString name="SlimHash">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						<OptionalCoordinateFrame name="WorldPivotData"></OptionalCoordinateFrame>
@@ -2390,9 +2390,9 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001384</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c5f</UniqueId>
 					</Properties>
-					<Item class="Part" referent="RBXAA30F080F9D14AE1A4305421193AD967">
+					<Item class="Part" referent="RBX9891AF5879094A7589BF1C90924FDEA1">
 						<Properties>
 							<token name="shape">2</token>
 							<token name="formFactorRaw">1</token>
@@ -2491,10 +2491,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001385</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c60</UniqueId>
 						</Properties>
 					</Item>
-					<Item class="Part" referent="RBXB6F9AC5325494A5B862205EA4EB3B3AC">
+					<Item class="Part" referent="RBX522BDFDE4EC748909CA0E431DA4EC5FD">
 						<Properties>
 							<token name="shape">0</token>
 							<token name="formFactorRaw">1</token>
@@ -2593,11 +2593,11 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001386</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c61</UniqueId>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="Model" referent="RBX4301520A775A4D6AA9294E0070B98755">
+				<Item class="Model" referent="RBXDF28D53431ED42BD9AB26F4AB9E238B0">
 					<Properties>
 						<Content name="ExplorerIconContent">
 							<null></null>
@@ -2625,7 +2625,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						</Vector3>
 						<token name="ModelStreamingMode">0</token>
 						<bool name="NeedsPivotMigration">false</bool>
-						<Ref name="PrimaryPart">RBX8512CB41CBEB4969B8A60995613FAF43</Ref>
+						<Ref name="PrimaryPart">RBXE01E1D6B3EA24E70BB72BAAF65E29A8E</Ref>
 						<float name="ScaleFactor">1</float>
 						<SharedString name="SlimHash">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						<OptionalCoordinateFrame name="WorldPivotData"></OptionalCoordinateFrame>
@@ -2637,9 +2637,9 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001387</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c62</UniqueId>
 					</Properties>
-					<Item class="Part" referent="RBX8512CB41CBEB4969B8A60995613FAF43">
+					<Item class="Part" referent="RBXE01E1D6B3EA24E70BB72BAAF65E29A8E">
 						<Properties>
 							<token name="shape">2</token>
 							<token name="formFactorRaw">1</token>
@@ -2738,10 +2738,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001388</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c63</UniqueId>
 						</Properties>
 					</Item>
-					<Item class="Part" referent="RBXA9E5C8C7D40F4B9CB1D601C88975F9DF">
+					<Item class="Part" referent="RBX5FF2B7FBAD524395A8BC5D8E1BEC717F">
 						<Properties>
 							<token name="shape">0</token>
 							<token name="formFactorRaw">1</token>
@@ -2840,11 +2840,11 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001389</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c64</UniqueId>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="Model" referent="RBX377531EC97374BEAA5DA2E3703A5014B">
+				<Item class="Model" referent="RBX1FBE14AE3EBD47D2936D4113C14A4B1F">
 					<Properties>
 						<Content name="ExplorerIconContent">
 							<null></null>
@@ -2872,7 +2872,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						</Vector3>
 						<token name="ModelStreamingMode">0</token>
 						<bool name="NeedsPivotMigration">false</bool>
-						<Ref name="PrimaryPart">RBX8018B966783141DCA6DC0F978C8AB8F3</Ref>
+						<Ref name="PrimaryPart">RBX04FD0E51B0344F8C8F141404F2963837</Ref>
 						<float name="ScaleFactor">1</float>
 						<SharedString name="SlimHash">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						<OptionalCoordinateFrame name="WorldPivotData"></OptionalCoordinateFrame>
@@ -2884,9 +2884,9 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad0000138a</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c65</UniqueId>
 					</Properties>
-					<Item class="Part" referent="RBX8018B966783141DCA6DC0F978C8AB8F3">
+					<Item class="Part" referent="RBX04FD0E51B0344F8C8F141404F2963837">
 						<Properties>
 							<token name="shape">2</token>
 							<token name="formFactorRaw">1</token>
@@ -2985,10 +2985,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad0000138b</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c66</UniqueId>
 						</Properties>
 					</Item>
-					<Item class="Part" referent="RBX2464FD3EC9694EBDA9F7054EED12129C">
+					<Item class="Part" referent="RBX11EE2EBF015946D8838CD4EACBC142C4">
 						<Properties>
 							<token name="shape">0</token>
 							<token name="formFactorRaw">1</token>
@@ -3087,11 +3087,11 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad0000138c</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c67</UniqueId>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="Model" referent="RBX256EB4FBEF59488591E23179CD1AB896">
+				<Item class="Model" referent="RBXBD68AB92B98A472D90E5D5E8FA3FE656">
 					<Properties>
 						<Content name="ExplorerIconContent">
 							<null></null>
@@ -3119,7 +3119,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						</Vector3>
 						<token name="ModelStreamingMode">0</token>
 						<bool name="NeedsPivotMigration">false</bool>
-						<Ref name="PrimaryPart">RBXD759C9EBCDE5471F87ABB5D2ECEEEB40</Ref>
+						<Ref name="PrimaryPart">RBXA455CA22030342FFA905DF19BF7E0946</Ref>
 						<float name="ScaleFactor">1</float>
 						<SharedString name="SlimHash">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						<OptionalCoordinateFrame name="WorldPivotData"></OptionalCoordinateFrame>
@@ -3131,9 +3131,9 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad0000138d</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c68</UniqueId>
 					</Properties>
-					<Item class="Part" referent="RBXD759C9EBCDE5471F87ABB5D2ECEEEB40">
+					<Item class="Part" referent="RBXA455CA22030342FFA905DF19BF7E0946">
 						<Properties>
 							<token name="shape">2</token>
 							<token name="formFactorRaw">1</token>
@@ -3232,10 +3232,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad0000138e</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c69</UniqueId>
 						</Properties>
 					</Item>
-					<Item class="Part" referent="RBX793B19BAABA945E9BDAACD8C2CDAFC0D">
+					<Item class="Part" referent="RBX88240E5ED2E5411B9541C7446185DD4C">
 						<Properties>
 							<token name="shape">0</token>
 							<token name="formFactorRaw">1</token>
@@ -3334,11 +3334,11 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad0000138f</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c6a</UniqueId>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="Model" referent="RBX6B440CD117C04DC1A0C4DCF0995C02B4">
+				<Item class="Model" referent="RBX46CA045B37E44E64A0AC808F79E2E909">
 					<Properties>
 						<Content name="ExplorerIconContent">
 							<null></null>
@@ -3366,7 +3366,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						</Vector3>
 						<token name="ModelStreamingMode">0</token>
 						<bool name="NeedsPivotMigration">false</bool>
-						<Ref name="PrimaryPart">RBX42C84DFC358F49348EA14AB19CA0F4C5</Ref>
+						<Ref name="PrimaryPart">RBX771A41BA4385427FB84E0D3EA5D58570</Ref>
 						<float name="ScaleFactor">1</float>
 						<SharedString name="SlimHash">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						<OptionalCoordinateFrame name="WorldPivotData"></OptionalCoordinateFrame>
@@ -3378,9 +3378,9 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001390</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c6b</UniqueId>
 					</Properties>
-					<Item class="Part" referent="RBX42C84DFC358F49348EA14AB19CA0F4C5">
+					<Item class="Part" referent="RBX771A41BA4385427FB84E0D3EA5D58570">
 						<Properties>
 							<token name="shape">2</token>
 							<token name="formFactorRaw">1</token>
@@ -3479,10 +3479,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001391</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c6c</UniqueId>
 						</Properties>
 					</Item>
-					<Item class="Part" referent="RBXC6B094BE25764E458F399AAC1ACA7B25">
+					<Item class="Part" referent="RBX8D34568D82BB43CB9AF4E03C16F3B43B">
 						<Properties>
 							<token name="shape">0</token>
 							<token name="formFactorRaw">1</token>
@@ -3581,11 +3581,11 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001392</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c6d</UniqueId>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="Model" referent="RBX4CFA47B8DF4343E28F17119AB1BCDB5F">
+				<Item class="Model" referent="RBX094934FDCC2E40E08571ED46D6DC3C9C">
 					<Properties>
 						<Content name="ExplorerIconContent">
 							<null></null>
@@ -3613,7 +3613,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						</Vector3>
 						<token name="ModelStreamingMode">0</token>
 						<bool name="NeedsPivotMigration">false</bool>
-						<Ref name="PrimaryPart">RBXF090A421CDD641ECAE97BD44160C13F0</Ref>
+						<Ref name="PrimaryPart">RBX00BA212300FE44068CDAFF427ABD3C67</Ref>
 						<float name="ScaleFactor">1</float>
 						<SharedString name="SlimHash">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						<OptionalCoordinateFrame name="WorldPivotData"></OptionalCoordinateFrame>
@@ -3625,9 +3625,9 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001393</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c6e</UniqueId>
 					</Properties>
-					<Item class="Part" referent="RBXF090A421CDD641ECAE97BD44160C13F0">
+					<Item class="Part" referent="RBX00BA212300FE44068CDAFF427ABD3C67">
 						<Properties>
 							<token name="shape">2</token>
 							<token name="formFactorRaw">1</token>
@@ -3726,10 +3726,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001394</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c6f</UniqueId>
 						</Properties>
 					</Item>
-					<Item class="Part" referent="RBX966839C656D544EFBC5902919FE1C210">
+					<Item class="Part" referent="RBXF9564E2E85984F32840E9095579592B6">
 						<Properties>
 							<token name="shape">0</token>
 							<token name="formFactorRaw">1</token>
@@ -3828,11 +3828,11 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001395</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c70</UniqueId>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="Model" referent="RBX216846DE721C48339954A4AD435BF286">
+				<Item class="Model" referent="RBX7D4195C0D7C14D01A667BDEDA39619DC">
 					<Properties>
 						<Content name="ExplorerIconContent">
 							<null></null>
@@ -3860,7 +3860,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						</Vector3>
 						<token name="ModelStreamingMode">0</token>
 						<bool name="NeedsPivotMigration">false</bool>
-						<Ref name="PrimaryPart">RBXD6A048DCA3B8405881F7807000EA2434</Ref>
+						<Ref name="PrimaryPart">RBXF1C118C30A5D45638E5CF655844C2329</Ref>
 						<float name="ScaleFactor">1</float>
 						<SharedString name="SlimHash">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						<OptionalCoordinateFrame name="WorldPivotData"></OptionalCoordinateFrame>
@@ -3872,9 +3872,9 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001396</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c71</UniqueId>
 					</Properties>
-					<Item class="Part" referent="RBXD6A048DCA3B8405881F7807000EA2434">
+					<Item class="Part" referent="RBXF1C118C30A5D45638E5CF655844C2329">
 						<Properties>
 							<token name="shape">2</token>
 							<token name="formFactorRaw">1</token>
@@ -3973,10 +3973,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001397</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c72</UniqueId>
 						</Properties>
 					</Item>
-					<Item class="Part" referent="RBX2F8E518A909349C39FBD52148FCD3B90">
+					<Item class="Part" referent="RBX28F3362584D1445991E1605D166792C6">
 						<Properties>
 							<token name="shape">0</token>
 							<token name="formFactorRaw">1</token>
@@ -4075,11 +4075,11 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001398</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c73</UniqueId>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="Model" referent="RBX418FC008CDEE4FB48F776C809BDA6F44">
+				<Item class="Model" referent="RBX2768DF08FD424152AC75991C629BEA7F">
 					<Properties>
 						<Content name="ExplorerIconContent">
 							<null></null>
@@ -4107,7 +4107,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						</Vector3>
 						<token name="ModelStreamingMode">0</token>
 						<bool name="NeedsPivotMigration">false</bool>
-						<Ref name="PrimaryPart">RBXAE0EC0F7176D400D8B62EED562404244</Ref>
+						<Ref name="PrimaryPart">RBX191BAA5D832C47ECA308AA60F0A2924E</Ref>
 						<float name="ScaleFactor">1</float>
 						<SharedString name="SlimHash">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						<OptionalCoordinateFrame name="WorldPivotData"></OptionalCoordinateFrame>
@@ -4119,9 +4119,9 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001399</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c74</UniqueId>
 					</Properties>
-					<Item class="Part" referent="RBXAE0EC0F7176D400D8B62EED562404244">
+					<Item class="Part" referent="RBX191BAA5D832C47ECA308AA60F0A2924E">
 						<Properties>
 							<token name="shape">2</token>
 							<token name="formFactorRaw">1</token>
@@ -4220,10 +4220,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad0000139a</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c75</UniqueId>
 						</Properties>
 					</Item>
-					<Item class="Part" referent="RBX3DD520ED256F4C04947C23347664F14F">
+					<Item class="Part" referent="RBX09F3E363F7EF4BADA38DD4A285252851">
 						<Properties>
 							<token name="shape">0</token>
 							<token name="formFactorRaw">1</token>
@@ -4322,11 +4322,11 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad0000139b</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c76</UniqueId>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="Model" referent="RBX245A305E963F4522B3FD9D0AA71876E7">
+				<Item class="Model" referent="RBX3C376B733D8543E5A917A54E481FD3E5">
 					<Properties>
 						<Content name="ExplorerIconContent">
 							<null></null>
@@ -4354,7 +4354,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						</Vector3>
 						<token name="ModelStreamingMode">0</token>
 						<bool name="NeedsPivotMigration">false</bool>
-						<Ref name="PrimaryPart">RBX3EA099ABCF8C41ECB933A5BD526C1CF5</Ref>
+						<Ref name="PrimaryPart">RBXE06B8DA79FA1421D84191BDBDF23ECF3</Ref>
 						<float name="ScaleFactor">1</float>
 						<SharedString name="SlimHash">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						<OptionalCoordinateFrame name="WorldPivotData"></OptionalCoordinateFrame>
@@ -4366,9 +4366,9 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad0000139c</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c77</UniqueId>
 					</Properties>
-					<Item class="Part" referent="RBX3EA099ABCF8C41ECB933A5BD526C1CF5">
+					<Item class="Part" referent="RBXE06B8DA79FA1421D84191BDBDF23ECF3">
 						<Properties>
 							<token name="shape">2</token>
 							<token name="formFactorRaw">1</token>
@@ -4467,10 +4467,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad0000139d</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c78</UniqueId>
 						</Properties>
 					</Item>
-					<Item class="Part" referent="RBXB6F7D6CF0FAD43AEA2DFAFB9BE34D87C">
+					<Item class="Part" referent="RBX73677CDB92124F8C88AE91B6F71EDFBF">
 						<Properties>
 							<token name="shape">0</token>
 							<token name="formFactorRaw">1</token>
@@ -4569,11 +4569,11 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad0000139e</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c79</UniqueId>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="Model" referent="RBX055DDB88A00344D582EBDABAB858A7D6">
+				<Item class="Model" referent="RBXF26F848D643046B6BC02F50970B3A97B">
 					<Properties>
 						<Content name="ExplorerIconContent">
 							<null></null>
@@ -4601,7 +4601,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						</Vector3>
 						<token name="ModelStreamingMode">0</token>
 						<bool name="NeedsPivotMigration">false</bool>
-						<Ref name="PrimaryPart">RBXCD1FB74505CC4F619EF3ECEADFBA565E</Ref>
+						<Ref name="PrimaryPart">RBXF4E7DF6851AA4084B80563B29DD869C6</Ref>
 						<float name="ScaleFactor">1</float>
 						<SharedString name="SlimHash">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						<OptionalCoordinateFrame name="WorldPivotData"></OptionalCoordinateFrame>
@@ -4613,9 +4613,9 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad0000139f</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c7a</UniqueId>
 					</Properties>
-					<Item class="Part" referent="RBXCD1FB74505CC4F619EF3ECEADFBA565E">
+					<Item class="Part" referent="RBXF4E7DF6851AA4084B80563B29DD869C6">
 						<Properties>
 							<token name="shape">2</token>
 							<token name="formFactorRaw">1</token>
@@ -4714,10 +4714,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013a0</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c7b</UniqueId>
 						</Properties>
 					</Item>
-					<Item class="Part" referent="RBX38A3F53251724643B48C9AD18DB9A482">
+					<Item class="Part" referent="RBXA77AA1B814DB4CBC8EE8D587669D5B6E">
 						<Properties>
 							<token name="shape">0</token>
 							<token name="formFactorRaw">1</token>
@@ -4816,11 +4816,11 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013a1</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c7c</UniqueId>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="Model" referent="RBX9F2748EFD59F407098440549AD5E8B86">
+				<Item class="Model" referent="RBXB95D036CA5DC4B09B2BFA35B2E34F38E">
 					<Properties>
 						<Content name="ExplorerIconContent">
 							<null></null>
@@ -4848,7 +4848,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						</Vector3>
 						<token name="ModelStreamingMode">0</token>
 						<bool name="NeedsPivotMigration">false</bool>
-						<Ref name="PrimaryPart">RBX367AAB1EFF49440BA3442AE77F90E583</Ref>
+						<Ref name="PrimaryPart">RBXA3CD369BA2C645F9ABD3F58EC6FB2B18</Ref>
 						<float name="ScaleFactor">1</float>
 						<SharedString name="SlimHash">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						<OptionalCoordinateFrame name="WorldPivotData"></OptionalCoordinateFrame>
@@ -4860,9 +4860,9 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013a2</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c7d</UniqueId>
 					</Properties>
-					<Item class="Part" referent="RBX367AAB1EFF49440BA3442AE77F90E583">
+					<Item class="Part" referent="RBXA3CD369BA2C645F9ABD3F58EC6FB2B18">
 						<Properties>
 							<token name="shape">2</token>
 							<token name="formFactorRaw">1</token>
@@ -4961,10 +4961,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013a3</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c7e</UniqueId>
 						</Properties>
 					</Item>
-					<Item class="Part" referent="RBX604E43DB793049C0B478702687AD9D84">
+					<Item class="Part" referent="RBXF84A07AF270E4BC4B13500C3FA28A360">
 						<Properties>
 							<token name="shape">0</token>
 							<token name="formFactorRaw">1</token>
@@ -5063,11 +5063,11 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013a4</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c7f</UniqueId>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="Model" referent="RBX40FE18FB2A894BCAA185BB48C0F2AFFB">
+				<Item class="Model" referent="RBX1526CB1811A941E6AD53466BFF3162BE">
 					<Properties>
 						<Content name="ExplorerIconContent">
 							<null></null>
@@ -5095,7 +5095,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						</Vector3>
 						<token name="ModelStreamingMode">0</token>
 						<bool name="NeedsPivotMigration">false</bool>
-						<Ref name="PrimaryPart">RBXE5B01EC19BED446FA9A61BD58FE75799</Ref>
+						<Ref name="PrimaryPart">RBX9618D76ED1E1480FB4553D283A9667E0</Ref>
 						<float name="ScaleFactor">1</float>
 						<SharedString name="SlimHash">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						<OptionalCoordinateFrame name="WorldPivotData"></OptionalCoordinateFrame>
@@ -5107,9 +5107,9 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013a5</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c80</UniqueId>
 					</Properties>
-					<Item class="Part" referent="RBXE5B01EC19BED446FA9A61BD58FE75799">
+					<Item class="Part" referent="RBX9618D76ED1E1480FB4553D283A9667E0">
 						<Properties>
 							<token name="shape">2</token>
 							<token name="formFactorRaw">1</token>
@@ -5208,10 +5208,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013a6</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c81</UniqueId>
 						</Properties>
 					</Item>
-					<Item class="Part" referent="RBX46F6CB48A51B4F89BD3C3C78682DC825">
+					<Item class="Part" referent="RBX2FC34D4016944BC08DFEC19A75D8B85F">
 						<Properties>
 							<token name="shape">0</token>
 							<token name="formFactorRaw">1</token>
@@ -5310,11 +5310,11 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013a7</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c82</UniqueId>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="Model" referent="RBXD3FA97D54D344A968B03A84F4FD56A90">
+				<Item class="Model" referent="RBX6C4E31E929414E1DA0BB8FE1E4DE0633">
 					<Properties>
 						<Content name="ExplorerIconContent">
 							<null></null>
@@ -5342,7 +5342,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						</Vector3>
 						<token name="ModelStreamingMode">0</token>
 						<bool name="NeedsPivotMigration">false</bool>
-						<Ref name="PrimaryPart">RBXD07A28E993254E77B2DE20B5B7466464</Ref>
+						<Ref name="PrimaryPart">RBX1EA2ED7783DA41FF8BA85F53EC706D63</Ref>
 						<float name="ScaleFactor">1</float>
 						<SharedString name="SlimHash">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						<OptionalCoordinateFrame name="WorldPivotData"></OptionalCoordinateFrame>
@@ -5354,9 +5354,9 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013a8</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c83</UniqueId>
 					</Properties>
-					<Item class="Part" referent="RBXD07A28E993254E77B2DE20B5B7466464">
+					<Item class="Part" referent="RBX1EA2ED7783DA41FF8BA85F53EC706D63">
 						<Properties>
 							<token name="shape">2</token>
 							<token name="formFactorRaw">1</token>
@@ -5455,10 +5455,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013a9</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c84</UniqueId>
 						</Properties>
 					</Item>
-					<Item class="Part" referent="RBX0EBEBBD8007847BE984261AE953D8AA2">
+					<Item class="Part" referent="RBXE9B83C8902934ADFAE620F3DD244DCBD">
 						<Properties>
 							<token name="shape">0</token>
 							<token name="formFactorRaw">1</token>
@@ -5557,11 +5557,11 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013aa</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c85</UniqueId>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="Model" referent="RBX0FADF349323447229970B9AE475215A1">
+				<Item class="Model" referent="RBXC6B5B99C5EDE400EB8B8AD3307528A43">
 					<Properties>
 						<Content name="ExplorerIconContent">
 							<null></null>
@@ -5589,7 +5589,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						</Vector3>
 						<token name="ModelStreamingMode">0</token>
 						<bool name="NeedsPivotMigration">false</bool>
-						<Ref name="PrimaryPart">RBX993B1B47303649BEB187EAF41C610F4B</Ref>
+						<Ref name="PrimaryPart">RBXB4D915FA32EA4EB9A1FE8A80F4560349</Ref>
 						<float name="ScaleFactor">1</float>
 						<SharedString name="SlimHash">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						<OptionalCoordinateFrame name="WorldPivotData"></OptionalCoordinateFrame>
@@ -5601,9 +5601,9 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013ab</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c86</UniqueId>
 					</Properties>
-					<Item class="Part" referent="RBX993B1B47303649BEB187EAF41C610F4B">
+					<Item class="Part" referent="RBXB4D915FA32EA4EB9A1FE8A80F4560349">
 						<Properties>
 							<token name="shape">2</token>
 							<token name="formFactorRaw">1</token>
@@ -5702,10 +5702,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013ac</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c87</UniqueId>
 						</Properties>
 					</Item>
-					<Item class="Part" referent="RBX1ABD6BBD09014A22A49A31FF46E24AF6">
+					<Item class="Part" referent="RBX782325AF639942BA8A5A4A0EDE55B2C2">
 						<Properties>
 							<token name="shape">0</token>
 							<token name="formFactorRaw">1</token>
@@ -5804,11 +5804,11 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013ad</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c88</UniqueId>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="Model" referent="RBXA7D2C4B245DF4AECBBCB6385786E8B5E">
+				<Item class="Model" referent="RBX6018A71DA7474D26BF4343F034E8F6B5">
 					<Properties>
 						<Content name="ExplorerIconContent">
 							<null></null>
@@ -5836,7 +5836,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						</Vector3>
 						<token name="ModelStreamingMode">0</token>
 						<bool name="NeedsPivotMigration">false</bool>
-						<Ref name="PrimaryPart">RBXC0BCF09ACC0A40E2A33FE017EAC886F5</Ref>
+						<Ref name="PrimaryPart">RBX2CA47AEE2F4B4BCEA4D2C4D193669670</Ref>
 						<float name="ScaleFactor">1</float>
 						<SharedString name="SlimHash">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						<OptionalCoordinateFrame name="WorldPivotData"></OptionalCoordinateFrame>
@@ -5848,9 +5848,9 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013ae</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c89</UniqueId>
 					</Properties>
-					<Item class="Part" referent="RBXC0BCF09ACC0A40E2A33FE017EAC886F5">
+					<Item class="Part" referent="RBX2CA47AEE2F4B4BCEA4D2C4D193669670">
 						<Properties>
 							<token name="shape">2</token>
 							<token name="formFactorRaw">1</token>
@@ -5949,10 +5949,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013af</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c8a</UniqueId>
 						</Properties>
 					</Item>
-					<Item class="Part" referent="RBX392D42E311254A028EA53558EEBCF323">
+					<Item class="Part" referent="RBX53747DF876A448A5A39CC774B5087992">
 						<Properties>
 							<token name="shape">0</token>
 							<token name="formFactorRaw">1</token>
@@ -6051,11 +6051,11 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013b0</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c8b</UniqueId>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="Model" referent="RBXE33D0DC73A4F44A095218989D3627FFA">
+				<Item class="Model" referent="RBX0DCA5EA0E74441C592D518E5C8C2541B">
 					<Properties>
 						<Content name="ExplorerIconContent">
 							<null></null>
@@ -6083,7 +6083,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						</Vector3>
 						<token name="ModelStreamingMode">0</token>
 						<bool name="NeedsPivotMigration">false</bool>
-						<Ref name="PrimaryPart">RBX2072BE49355D476CA25CA98388385428</Ref>
+						<Ref name="PrimaryPart">RBX4634BEF58EA0476B8603BB9C8EF8D4B0</Ref>
 						<float name="ScaleFactor">1</float>
 						<SharedString name="SlimHash">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						<OptionalCoordinateFrame name="WorldPivotData"></OptionalCoordinateFrame>
@@ -6095,9 +6095,9 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013b1</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c8c</UniqueId>
 					</Properties>
-					<Item class="Part" referent="RBX2072BE49355D476CA25CA98388385428">
+					<Item class="Part" referent="RBX4634BEF58EA0476B8603BB9C8EF8D4B0">
 						<Properties>
 							<token name="shape">2</token>
 							<token name="formFactorRaw">1</token>
@@ -6196,10 +6196,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013b2</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c8d</UniqueId>
 						</Properties>
 					</Item>
-					<Item class="Part" referent="RBX776C930A82E24114880A6C37A158C973">
+					<Item class="Part" referent="RBX9A7EB69ECAF7462F977F385401BE408A">
 						<Properties>
 							<token name="shape">0</token>
 							<token name="formFactorRaw">1</token>
@@ -6298,11 +6298,11 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013b3</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c8e</UniqueId>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="Model" referent="RBX4C4E75B70210487A9EBEFC0DFEBAD87C">
+				<Item class="Model" referent="RBXCF88D7B050914EEDAC84A33C61CBCF10">
 					<Properties>
 						<Content name="ExplorerIconContent">
 							<null></null>
@@ -6330,7 +6330,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						</Vector3>
 						<token name="ModelStreamingMode">0</token>
 						<bool name="NeedsPivotMigration">false</bool>
-						<Ref name="PrimaryPart">RBX204DFDB26AAE4BA68A2A4C8A8CF5C36B</Ref>
+						<Ref name="PrimaryPart">RBX228BB6BF5EDC4FFEAB7E4A7B1048A251</Ref>
 						<float name="ScaleFactor">1</float>
 						<SharedString name="SlimHash">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						<OptionalCoordinateFrame name="WorldPivotData"></OptionalCoordinateFrame>
@@ -6342,9 +6342,9 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013b4</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c8f</UniqueId>
 					</Properties>
-					<Item class="Part" referent="RBX204DFDB26AAE4BA68A2A4C8A8CF5C36B">
+					<Item class="Part" referent="RBX228BB6BF5EDC4FFEAB7E4A7B1048A251">
 						<Properties>
 							<token name="shape">2</token>
 							<token name="formFactorRaw">1</token>
@@ -6443,10 +6443,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013b5</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c90</UniqueId>
 						</Properties>
 					</Item>
-					<Item class="Part" referent="RBXA3A08D2E0D9E4B65BAD4EC289307EE57">
+					<Item class="Part" referent="RBX69F81850D0FB489A877E4EEABEF99F88">
 						<Properties>
 							<token name="shape">0</token>
 							<token name="formFactorRaw">1</token>
@@ -6545,11 +6545,11 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013b6</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c91</UniqueId>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="Model" referent="RBX5F46AB4BDB95463991808E45289DD197">
+				<Item class="Model" referent="RBX12671866ABFF4AA9AB079B2BA7385520">
 					<Properties>
 						<Content name="ExplorerIconContent">
 							<null></null>
@@ -6577,7 +6577,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						</Vector3>
 						<token name="ModelStreamingMode">0</token>
 						<bool name="NeedsPivotMigration">false</bool>
-						<Ref name="PrimaryPart">RBXB231BA4FD26B4C18919245231014FE97</Ref>
+						<Ref name="PrimaryPart">RBX9DF248CBCF4B455B93A63C62898C6469</Ref>
 						<float name="ScaleFactor">1</float>
 						<SharedString name="SlimHash">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						<OptionalCoordinateFrame name="WorldPivotData"></OptionalCoordinateFrame>
@@ -6589,9 +6589,9 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013b7</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c92</UniqueId>
 					</Properties>
-					<Item class="Part" referent="RBXB231BA4FD26B4C18919245231014FE97">
+					<Item class="Part" referent="RBX9DF248CBCF4B455B93A63C62898C6469">
 						<Properties>
 							<token name="shape">2</token>
 							<token name="formFactorRaw">1</token>
@@ -6690,10 +6690,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013b8</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c93</UniqueId>
 						</Properties>
 					</Item>
-					<Item class="Part" referent="RBX6005E2F38C50456EB3653038A628C8B3">
+					<Item class="Part" referent="RBX17DA2B7988824E43865E3D5C2E98C0E1">
 						<Properties>
 							<token name="shape">0</token>
 							<token name="formFactorRaw">1</token>
@@ -6792,11 +6792,11 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013b9</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c94</UniqueId>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="Model" referent="RBX754024A4978F461E9A3E0D9FA073FAE0">
+				<Item class="Model" referent="RBX2BAC3DAE77874971995C2EA5709DF4F6">
 					<Properties>
 						<Content name="ExplorerIconContent">
 							<null></null>
@@ -6824,7 +6824,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						</Vector3>
 						<token name="ModelStreamingMode">0</token>
 						<bool name="NeedsPivotMigration">false</bool>
-						<Ref name="PrimaryPart">RBXD4D1572B126D4219AC2B3A10AB825BEA</Ref>
+						<Ref name="PrimaryPart">RBX3292674BEDD14F24B41F763D67CBA66A</Ref>
 						<float name="ScaleFactor">1</float>
 						<SharedString name="SlimHash">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						<OptionalCoordinateFrame name="WorldPivotData"></OptionalCoordinateFrame>
@@ -6836,9 +6836,9 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013ba</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c95</UniqueId>
 					</Properties>
-					<Item class="Part" referent="RBXD4D1572B126D4219AC2B3A10AB825BEA">
+					<Item class="Part" referent="RBX3292674BEDD14F24B41F763D67CBA66A">
 						<Properties>
 							<token name="shape">2</token>
 							<token name="formFactorRaw">1</token>
@@ -6937,10 +6937,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013bb</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c96</UniqueId>
 						</Properties>
 					</Item>
-					<Item class="Part" referent="RBX5DCE81CC38BD435A9389A7ED21513309">
+					<Item class="Part" referent="RBX5332257D5309463A9F989CF555DAC52C">
 						<Properties>
 							<token name="shape">0</token>
 							<token name="formFactorRaw">1</token>
@@ -7039,11 +7039,11 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013bc</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c97</UniqueId>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="Model" referent="RBX681C173B13074863B8A76D7A1FCB6B98">
+				<Item class="Model" referent="RBX357D00C36C294F6890D8EA020E2E774A">
 					<Properties>
 						<Content name="ExplorerIconContent">
 							<null></null>
@@ -7071,7 +7071,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						</Vector3>
 						<token name="ModelStreamingMode">0</token>
 						<bool name="NeedsPivotMigration">false</bool>
-						<Ref name="PrimaryPart">RBXEF0032CC21604F88BFB30E38C7D25D24</Ref>
+						<Ref name="PrimaryPart">RBX3C38BBC11F464AD694BC0AC8C7E96FD5</Ref>
 						<float name="ScaleFactor">1</float>
 						<SharedString name="SlimHash">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						<OptionalCoordinateFrame name="WorldPivotData"></OptionalCoordinateFrame>
@@ -7083,9 +7083,9 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013bd</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c98</UniqueId>
 					</Properties>
-					<Item class="Part" referent="RBXEF0032CC21604F88BFB30E38C7D25D24">
+					<Item class="Part" referent="RBX3C38BBC11F464AD694BC0AC8C7E96FD5">
 						<Properties>
 							<token name="shape">2</token>
 							<token name="formFactorRaw">1</token>
@@ -7184,10 +7184,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013be</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c99</UniqueId>
 						</Properties>
 					</Item>
-					<Item class="Part" referent="RBXB81BE02F3D9348798588B6E07DA6AEE6">
+					<Item class="Part" referent="RBX29F8F167036F471384DB6E46D627FCE6">
 						<Properties>
 							<token name="shape">0</token>
 							<token name="formFactorRaw">1</token>
@@ -7286,11 +7286,11 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013bf</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c9a</UniqueId>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="Model" referent="RBX37270ACE5E8F43E99B8582959CAD7119">
+				<Item class="Model" referent="RBX3DBD9D2383E749A4A8E20CD66952DF73">
 					<Properties>
 						<Content name="ExplorerIconContent">
 							<null></null>
@@ -7318,7 +7318,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						</Vector3>
 						<token name="ModelStreamingMode">0</token>
 						<bool name="NeedsPivotMigration">false</bool>
-						<Ref name="PrimaryPart">RBXE8122C203853499598C732CEFA2D8186</Ref>
+						<Ref name="PrimaryPart">RBXE2198A1422584B988849333255043338</Ref>
 						<float name="ScaleFactor">1</float>
 						<SharedString name="SlimHash">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						<OptionalCoordinateFrame name="WorldPivotData"></OptionalCoordinateFrame>
@@ -7330,9 +7330,9 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013c0</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c9b</UniqueId>
 					</Properties>
-					<Item class="Part" referent="RBXE8122C203853499598C732CEFA2D8186">
+					<Item class="Part" referent="RBXE2198A1422584B988849333255043338">
 						<Properties>
 							<token name="shape">2</token>
 							<token name="formFactorRaw">1</token>
@@ -7431,10 +7431,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013c1</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c9c</UniqueId>
 						</Properties>
 					</Item>
-					<Item class="Part" referent="RBX72ACB72AFDAE4294BE1D218139A4EB75">
+					<Item class="Part" referent="RBX63671593E2624A9280298F726F9361C0">
 						<Properties>
 							<token name="shape">0</token>
 							<token name="formFactorRaw">1</token>
@@ -7533,11 +7533,11 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013c2</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c9d</UniqueId>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="Model" referent="RBX38E4F8E45E4B4AC590196A5721F43F49">
+				<Item class="Model" referent="RBX03CA342BDB91449FBFC7B8B640BAFF24">
 					<Properties>
 						<Content name="ExplorerIconContent">
 							<null></null>
@@ -7565,7 +7565,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						</Vector3>
 						<token name="ModelStreamingMode">0</token>
 						<bool name="NeedsPivotMigration">false</bool>
-						<Ref name="PrimaryPart">RBX02E33695652340DB94D3B1FDC1B96984</Ref>
+						<Ref name="PrimaryPart">RBX912083E8EC1549C1B9C3BC80D0C5405C</Ref>
 						<float name="ScaleFactor">1</float>
 						<SharedString name="SlimHash">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						<OptionalCoordinateFrame name="WorldPivotData"></OptionalCoordinateFrame>
@@ -7577,9 +7577,9 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013c3</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c9e</UniqueId>
 					</Properties>
-					<Item class="Part" referent="RBX02E33695652340DB94D3B1FDC1B96984">
+					<Item class="Part" referent="RBX912083E8EC1549C1B9C3BC80D0C5405C">
 						<Properties>
 							<token name="shape">2</token>
 							<token name="formFactorRaw">1</token>
@@ -7678,10 +7678,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013c4</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c9f</UniqueId>
 						</Properties>
 					</Item>
-					<Item class="Part" referent="RBX709E5AD5808E4380BF4B6315A2213D03">
+					<Item class="Part" referent="RBX96C04DCB0DA34C9497F6EE7711296226">
 						<Properties>
 							<token name="shape">0</token>
 							<token name="formFactorRaw">1</token>
@@ -7780,11 +7780,11 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013c5</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001ca0</UniqueId>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="Model" referent="RBX3907007558914E6B94DF221BF84CBBBD">
+				<Item class="Model" referent="RBXA06BD1738AFA44EDBC8E882F60359A03">
 					<Properties>
 						<Content name="ExplorerIconContent">
 							<null></null>
@@ -7812,7 +7812,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						</Vector3>
 						<token name="ModelStreamingMode">0</token>
 						<bool name="NeedsPivotMigration">false</bool>
-						<Ref name="PrimaryPart">RBXD5EA35C8988D4B7A9FE9069E09DCB814</Ref>
+						<Ref name="PrimaryPart">RBX1E1F64558EAD4680A2F51FDC28784B5F</Ref>
 						<float name="ScaleFactor">1</float>
 						<SharedString name="SlimHash">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						<OptionalCoordinateFrame name="WorldPivotData"></OptionalCoordinateFrame>
@@ -7824,9 +7824,9 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013c6</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001ca1</UniqueId>
 					</Properties>
-					<Item class="Part" referent="RBXD5EA35C8988D4B7A9FE9069E09DCB814">
+					<Item class="Part" referent="RBX1E1F64558EAD4680A2F51FDC28784B5F">
 						<Properties>
 							<token name="shape">2</token>
 							<token name="formFactorRaw">1</token>
@@ -7925,10 +7925,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013c7</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001ca2</UniqueId>
 						</Properties>
 					</Item>
-					<Item class="Part" referent="RBX953DB046291E4C6A9D66E3CA3DCA89B9">
+					<Item class="Part" referent="RBX819A243EEFE849C3BFF4C984292CF271">
 						<Properties>
 							<token name="shape">0</token>
 							<token name="formFactorRaw">1</token>
@@ -8027,11 +8027,11 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013c8</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001ca3</UniqueId>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="Model" referent="RBXD95E9DF311A14F6D83BA8D244F361675">
+				<Item class="Model" referent="RBXCD19FA44A05B4769B93BE8F2AE4C54C8">
 					<Properties>
 						<Content name="ExplorerIconContent">
 							<null></null>
@@ -8059,7 +8059,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						</Vector3>
 						<token name="ModelStreamingMode">0</token>
 						<bool name="NeedsPivotMigration">false</bool>
-						<Ref name="PrimaryPart">RBXD0F11D3B626242E8A23D58ABBDB67205</Ref>
+						<Ref name="PrimaryPart">RBX3CF76B3AD471454B9D270F60EE1F38F7</Ref>
 						<float name="ScaleFactor">1</float>
 						<SharedString name="SlimHash">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						<OptionalCoordinateFrame name="WorldPivotData"></OptionalCoordinateFrame>
@@ -8071,9 +8071,9 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013c9</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001ca4</UniqueId>
 					</Properties>
-					<Item class="Part" referent="RBXD0F11D3B626242E8A23D58ABBDB67205">
+					<Item class="Part" referent="RBX3CF76B3AD471454B9D270F60EE1F38F7">
 						<Properties>
 							<token name="shape">2</token>
 							<token name="formFactorRaw">1</token>
@@ -8172,10 +8172,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013ca</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001ca5</UniqueId>
 						</Properties>
 					</Item>
-					<Item class="Part" referent="RBXA7EC6B2A9E0845FBA98D6C379C4021AE">
+					<Item class="Part" referent="RBX52EDCE88A4F3459CB95756E31D529FC4">
 						<Properties>
 							<token name="shape">0</token>
 							<token name="formFactorRaw">1</token>
@@ -8274,11 +8274,11 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013cb</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001ca6</UniqueId>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="Model" referent="RBXF5577FD4D4664BE79D15319F12C8CA9C">
+				<Item class="Model" referent="RBX24A83E88B15C4DC3B4265A3FA81D6F22">
 					<Properties>
 						<Content name="ExplorerIconContent">
 							<null></null>
@@ -8306,7 +8306,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						</Vector3>
 						<token name="ModelStreamingMode">0</token>
 						<bool name="NeedsPivotMigration">false</bool>
-						<Ref name="PrimaryPart">RBXF9FAC1A9F32B487C851D6428D110C051</Ref>
+						<Ref name="PrimaryPart">RBXD08429DF6AA54C61A664A1467C5AE2FE</Ref>
 						<float name="ScaleFactor">1</float>
 						<SharedString name="SlimHash">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						<OptionalCoordinateFrame name="WorldPivotData"></OptionalCoordinateFrame>
@@ -8318,9 +8318,9 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013cc</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001ca7</UniqueId>
 					</Properties>
-					<Item class="Part" referent="RBXF9FAC1A9F32B487C851D6428D110C051">
+					<Item class="Part" referent="RBXD08429DF6AA54C61A664A1467C5AE2FE">
 						<Properties>
 							<token name="shape">2</token>
 							<token name="formFactorRaw">1</token>
@@ -8419,10 +8419,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013cd</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001ca8</UniqueId>
 						</Properties>
 					</Item>
-					<Item class="Part" referent="RBXBB0C3E8C022F4BBF972FCDC07A9E0B5C">
+					<Item class="Part" referent="RBXFD24B178C84041F1BD8B2AF767462A60">
 						<Properties>
 							<token name="shape">0</token>
 							<token name="formFactorRaw">1</token>
@@ -8521,11 +8521,11 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013ce</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001ca9</UniqueId>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="Model" referent="RBX60AD43E581D84290AEA94EE7B4145914">
+				<Item class="Model" referent="RBX657A91670A0B46E6B9B79F73965237D8">
 					<Properties>
 						<Content name="ExplorerIconContent">
 							<null></null>
@@ -8553,7 +8553,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						</Vector3>
 						<token name="ModelStreamingMode">0</token>
 						<bool name="NeedsPivotMigration">false</bool>
-						<Ref name="PrimaryPart">RBX917AAA2243084DF2AFE4B4257BF0437D</Ref>
+						<Ref name="PrimaryPart">RBX5FEBAF6DD99845259CAA0C86BC1F71CA</Ref>
 						<float name="ScaleFactor">1</float>
 						<SharedString name="SlimHash">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						<OptionalCoordinateFrame name="WorldPivotData"></OptionalCoordinateFrame>
@@ -8565,9 +8565,9 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013cf</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001caa</UniqueId>
 					</Properties>
-					<Item class="Part" referent="RBX917AAA2243084DF2AFE4B4257BF0437D">
+					<Item class="Part" referent="RBX5FEBAF6DD99845259CAA0C86BC1F71CA">
 						<Properties>
 							<token name="shape">2</token>
 							<token name="formFactorRaw">1</token>
@@ -8666,10 +8666,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013d0</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001cab</UniqueId>
 						</Properties>
 					</Item>
-					<Item class="Part" referent="RBX1A79BC51E9F8480F99902E0D97B157E2">
+					<Item class="Part" referent="RBXAA4CCF0E9320422D8C2BE69EE246729F">
 						<Properties>
 							<token name="shape">0</token>
 							<token name="formFactorRaw">1</token>
@@ -8768,11 +8768,11 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013d1</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001cac</UniqueId>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="Model" referent="RBX525DB7359ED74F4EA8FED789811F2813">
+				<Item class="Model" referent="RBXEE978144B1024A3B8ABD5FA0067080C3">
 					<Properties>
 						<Content name="ExplorerIconContent">
 							<null></null>
@@ -8800,7 +8800,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						</Vector3>
 						<token name="ModelStreamingMode">0</token>
 						<bool name="NeedsPivotMigration">false</bool>
-						<Ref name="PrimaryPart">RBX57D4F4A7ED7B4FB7B67505106144748F</Ref>
+						<Ref name="PrimaryPart">RBX798935F7AF91424D9B5B53AC63A80B51</Ref>
 						<float name="ScaleFactor">1</float>
 						<SharedString name="SlimHash">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 						<OptionalCoordinateFrame name="WorldPivotData"></OptionalCoordinateFrame>
@@ -8812,9 +8812,9 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013d2</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001cad</UniqueId>
 					</Properties>
-					<Item class="Part" referent="RBX57D4F4A7ED7B4FB7B67505106144748F">
+					<Item class="Part" referent="RBX798935F7AF91424D9B5B53AC63A80B51">
 						<Properties>
 							<token name="shape">2</token>
 							<token name="formFactorRaw">1</token>
@@ -8913,10 +8913,10 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013d3</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001cae</UniqueId>
 						</Properties>
 					</Item>
-					<Item class="Part" referent="RBXADEDDCAE66584FD0B8A127BF299453C9">
+					<Item class="Part" referent="RBX5DEC554AEEB640298C842BE185D258C6">
 						<Properties>
 							<token name="shape">0</token>
 							<token name="formFactorRaw">1</token>
@@ -9015,12 +9015,12 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 							<BinaryString name="SerializedOverrides"></BinaryString>
 							<int64 name="SourceAssetId">-1</int64>
 							<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad000013d4</UniqueId>
+							<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001caf</UniqueId>
 						</Properties>
 					</Item>
 				</Item>
 			</Item>
-			<Item class="Part" referent="RBX8A534EA2E1504284B7BF3AABDF41D20A">
+			<Item class="Part" referent="RBX9A4F1CD05BBD4F1E93BA780FEAF1CDAB">
 				<Properties>
 					<token name="shape">1</token>
 					<token name="formFactorRaw">1</token>
@@ -9119,7 +9119,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 					<BinaryString name="SerializedOverrides"></BinaryString>
 					<int64 name="SourceAssetId">-1</int64>
 					<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-					<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001366</UniqueId>
+					<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c3e</UniqueId>
 				</Properties>
 			</Item>
 		</Item>
@@ -9143,7 +9143,7 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 				<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 				<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00000d06</UniqueId>
 			</Properties>
-			<Item class="Part" referent="RBX6F2C87E7D5AC4121B46E1B323E79F73A">
+			<Item class="Part" referent="RBXCC3EFFEFFC374DB78A78CD91377854A2">
 				<Properties>
 					<token name="shape">2</token>
 					<token name="formFactorRaw">1</token>
@@ -9242,9 +9242,9 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 					<BinaryString name="SerializedOverrides"></BinaryString>
 					<int64 name="SourceAssetId">-1</int64>
 					<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-					<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001369</UniqueId>
+					<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c41</UniqueId>
 				</Properties>
-				<Item class="PointLight" referent="RBXBE5F968B36644C93A163998478311472">
+				<Item class="PointLight" referent="RBXC68C59B421AB4E15AE14A50C7B56A2AF">
 					<Properties>
 						<float name="Range">30</float>
 						<float name="Brightness">2</float>
@@ -9263,11 +9263,11 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad0000136a</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c42</UniqueId>
 					</Properties>
 				</Item>
 			</Item>
-			<Item class="Part" referent="RBX4191EA4D0E194DA093F851A883361E78">
+			<Item class="Part" referent="RBXC6FAA9904B8045419EFA22FC396344D8">
 				<Properties>
 					<token name="shape">2</token>
 					<token name="formFactorRaw">1</token>
@@ -9366,9 +9366,9 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 					<BinaryString name="SerializedOverrides"></BinaryString>
 					<int64 name="SourceAssetId">-1</int64>
 					<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-					<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad0000136b</UniqueId>
+					<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c43</UniqueId>
 				</Properties>
-				<Item class="PointLight" referent="RBX4927345185D94C1FA6943D3C7A879E3F">
+				<Item class="PointLight" referent="RBX36FB3836D0194DCEB3A8C75BDEB5C0EB">
 					<Properties>
 						<float name="Range">30</float>
 						<float name="Brightness">2</float>
@@ -9387,11 +9387,11 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad0000136c</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c44</UniqueId>
 					</Properties>
 				</Item>
 			</Item>
-			<Item class="Part" referent="RBX765C6F35B97A4D478BCA65A0BF51F8E8">
+			<Item class="Part" referent="RBX6CABC4C75FB04E61A5E69DF8AC1D4D21">
 				<Properties>
 					<token name="shape">2</token>
 					<token name="formFactorRaw">1</token>
@@ -9490,9 +9490,9 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 					<BinaryString name="SerializedOverrides"></BinaryString>
 					<int64 name="SourceAssetId">-1</int64>
 					<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-					<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad0000136d</UniqueId>
+					<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c45</UniqueId>
 				</Properties>
-				<Item class="PointLight" referent="RBXE5FD4F38AC8B4ADB8BFF218F0EF8893C">
+				<Item class="PointLight" referent="RBX46AECA5C154041F597EA0568BBF01FDD">
 					<Properties>
 						<float name="Range">30</float>
 						<float name="Brightness">2</float>
@@ -9511,11 +9511,11 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad0000136e</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c46</UniqueId>
 					</Properties>
 				</Item>
 			</Item>
-			<Item class="Part" referent="RBX2BA0DFBD50AB4EE69F556426585F9F89">
+			<Item class="Part" referent="RBXF4065764A78D4B678A8218D520D28938">
 				<Properties>
 					<token name="shape">2</token>
 					<token name="formFactorRaw">1</token>
@@ -9614,9 +9614,9 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 					<BinaryString name="SerializedOverrides"></BinaryString>
 					<int64 name="SourceAssetId">-1</int64>
 					<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-					<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad0000136f</UniqueId>
+					<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c47</UniqueId>
 				</Properties>
-				<Item class="PointLight" referent="RBXD28485CC726B4AE29EE09C5DB736FB57">
+				<Item class="PointLight" referent="RBX94944E8F39374D9E8D4FEA22C98CF0D6">
 					<Properties>
 						<float name="Range">30</float>
 						<float name="Brightness">2</float>
@@ -9635,11 +9635,11 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001370</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c48</UniqueId>
 					</Properties>
 				</Item>
 			</Item>
-			<Item class="Part" referent="RBX630CDD1FB25C4AE1B09D9F6243478C50">
+			<Item class="Part" referent="RBXE7B0F8A4C0544B319039F85693238C97">
 				<Properties>
 					<token name="shape">2</token>
 					<token name="formFactorRaw">1</token>
@@ -9738,9 +9738,9 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 					<BinaryString name="SerializedOverrides"></BinaryString>
 					<int64 name="SourceAssetId">-1</int64>
 					<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-					<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001371</UniqueId>
+					<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c49</UniqueId>
 				</Properties>
-				<Item class="PointLight" referent="RBX3FE004DD82F1418BAF124D9E6B0F1F69">
+				<Item class="PointLight" referent="RBX27A9578BD8C24EB08A22BB4CEC421D79">
 					<Properties>
 						<float name="Range">30</float>
 						<float name="Brightness">2</float>
@@ -9759,9 +9759,336 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 						<BinaryString name="SerializedOverrides"></BinaryString>
 						<int64 name="SourceAssetId">-1</int64>
 						<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001372</UniqueId>
+						<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c4a</UniqueId>
 					</Properties>
 				</Item>
+			</Item>
+		</Item>
+		<Item class="Folder" referent="RBX3D62B00174DE4CF3846D13C95A6B33DC">
+			<Properties>
+				<Content name="ExplorerIconContent">
+					<null></null>
+				</Content>
+				<Color3 name="IconTint">
+					<R>0</R>
+					<G>0</G>
+					<B>0</B>
+				</Color3>
+				<BinaryString name="AttributesSerialize"></BinaryString>
+				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+				<bool name="DefinesCapabilities">false</bool>
+				<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+				<string name="Name">MushroomSpawns</string>
+				<BinaryString name="SerializedOverrides"></BinaryString>
+				<int64 name="SourceAssetId">-1</int64>
+				<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
+				<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c3d</UniqueId>
+			</Properties>
+			<Item class="Part" referent="RBX4B628EF906E7404FBDD5F5FB88CFCB98">
+				<Properties>
+					<token name="shape">1</token>
+					<token name="formFactorRaw">1</token>
+					<bool name="Anchored">true</bool>
+					<bool name="AudioCanCollide">true</bool>
+					<float name="BackParamA">-0.5</float>
+					<float name="BackParamB">0.5</float>
+					<token name="BackSurface">0</token>
+					<token name="BackSurfaceInput">0</token>
+					<float name="BottomParamA">-0.5</float>
+					<float name="BottomParamB">0.5</float>
+					<token name="BottomSurface">4</token>
+					<token name="BottomSurfaceInput">0</token>
+					<CoordinateFrame name="CFrame">
+						<X>-86</X>
+						<Y>0.5</Y>
+						<Z>9</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<bool name="CanCollide">false</bool>
+					<bool name="CanQuery">false</bool>
+					<bool name="CanTouch">false</bool>
+					<bool name="CastShadow">true</bool>
+					<string name="CollisionGroup">Default</string>
+					<int name="CollisionGroupId">0</int>
+					<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+					<PhysicalProperties name="CustomPhysicalProperties">
+						<CustomPhysics>false</CustomPhysics>
+					</PhysicalProperties>
+					<bool name="EnableFluidForces">true</bool>
+					<float name="FrontParamA">-0.5</float>
+					<float name="FrontParamB">0.5</float>
+					<token name="FrontSurface">0</token>
+					<token name="FrontSurfaceInput">0</token>
+					<float name="LeftParamA">-0.5</float>
+					<float name="LeftParamB">0.5</float>
+					<token name="LeftSurface">0</token>
+					<token name="LeftSurfaceInput">0</token>
+					<bool name="Locked">false</bool>
+					<bool name="Massless">false</bool>
+					<token name="Material">256</token>
+					<string name="MaterialVariantSerialized"></string>
+					<CoordinateFrame name="PivotOffset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<float name="Reflectance">0</float>
+					<float name="RightParamA">-0.5</float>
+					<float name="RightParamB">0.5</float>
+					<token name="RightSurface">0</token>
+					<token name="RightSurfaceInput">0</token>
+					<int name="RootPriority">0</int>
+					<Vector3 name="RotVelocity">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<float name="TopParamA">-0.5</float>
+					<float name="TopParamB">0.5</float>
+					<token name="TopSurface">3</token>
+					<token name="TopSurfaceInput">0</token>
+					<float name="Transparency">1</float>
+					<Vector3 name="Velocity">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="size">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+					<BinaryString name="AttributesSerialize">AgAAAAkAAABHZW5lcmF0ZWQDAQwAAABNdXNocm9vbVR5cGUCBwAAAE1vb25jYXA=</BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
+					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+					<string name="Name">WestGrove_1</string>
+					<BinaryString name="SerializedOverrides"></BinaryString>
+					<int64 name="SourceAssetId">-1</int64>
+					<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
+					<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c59</UniqueId>
+				</Properties>
+			</Item>
+			<Item class="Part" referent="RBX6FD80B8F9ED24F4198198E86DE5753D4">
+				<Properties>
+					<token name="shape">1</token>
+					<token name="formFactorRaw">1</token>
+					<bool name="Anchored">true</bool>
+					<bool name="AudioCanCollide">true</bool>
+					<float name="BackParamA">-0.5</float>
+					<float name="BackParamB">0.5</float>
+					<token name="BackSurface">0</token>
+					<token name="BackSurfaceInput">0</token>
+					<float name="BottomParamA">-0.5</float>
+					<float name="BottomParamB">0.5</float>
+					<token name="BottomSurface">4</token>
+					<token name="BottomSurfaceInput">0</token>
+					<CoordinateFrame name="CFrame">
+						<X>-100</X>
+						<Y>0.5</Y>
+						<Z>-8</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<bool name="CanCollide">false</bool>
+					<bool name="CanQuery">false</bool>
+					<bool name="CanTouch">false</bool>
+					<bool name="CastShadow">true</bool>
+					<string name="CollisionGroup">Default</string>
+					<int name="CollisionGroupId">0</int>
+					<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+					<PhysicalProperties name="CustomPhysicalProperties">
+						<CustomPhysics>false</CustomPhysics>
+					</PhysicalProperties>
+					<bool name="EnableFluidForces">true</bool>
+					<float name="FrontParamA">-0.5</float>
+					<float name="FrontParamB">0.5</float>
+					<token name="FrontSurface">0</token>
+					<token name="FrontSurfaceInput">0</token>
+					<float name="LeftParamA">-0.5</float>
+					<float name="LeftParamB">0.5</float>
+					<token name="LeftSurface">0</token>
+					<token name="LeftSurfaceInput">0</token>
+					<bool name="Locked">false</bool>
+					<bool name="Massless">false</bool>
+					<token name="Material">256</token>
+					<string name="MaterialVariantSerialized"></string>
+					<CoordinateFrame name="PivotOffset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<float name="Reflectance">0</float>
+					<float name="RightParamA">-0.5</float>
+					<float name="RightParamB">0.5</float>
+					<token name="RightSurface">0</token>
+					<token name="RightSurfaceInput">0</token>
+					<int name="RootPriority">0</int>
+					<Vector3 name="RotVelocity">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<float name="TopParamA">-0.5</float>
+					<float name="TopParamB">0.5</float>
+					<token name="TopSurface">3</token>
+					<token name="TopSurfaceInput">0</token>
+					<float name="Transparency">1</float>
+					<Vector3 name="Velocity">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="size">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+					<BinaryString name="AttributesSerialize">AgAAAAkAAABHZW5lcmF0ZWQDAQwAAABNdXNocm9vbVR5cGUCBwAAAE1vb25jYXA=</BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
+					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+					<string name="Name">WestGrove_2</string>
+					<BinaryString name="SerializedOverrides"></BinaryString>
+					<int64 name="SourceAssetId">-1</int64>
+					<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
+					<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c5a</UniqueId>
+				</Properties>
+			</Item>
+			<Item class="Part" referent="RBX2F4675BF264E4D928018EDC9E2330F69">
+				<Properties>
+					<token name="shape">1</token>
+					<token name="formFactorRaw">1</token>
+					<bool name="Anchored">true</bool>
+					<bool name="AudioCanCollide">true</bool>
+					<float name="BackParamA">-0.5</float>
+					<float name="BackParamB">0.5</float>
+					<token name="BackSurface">0</token>
+					<token name="BackSurfaceInput">0</token>
+					<float name="BottomParamA">-0.5</float>
+					<float name="BottomParamB">0.5</float>
+					<token name="BottomSurface">4</token>
+					<token name="BottomSurfaceInput">0</token>
+					<CoordinateFrame name="CFrame">
+						<X>9</X>
+						<Y>0.5</Y>
+						<Z>38</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<bool name="CanCollide">false</bool>
+					<bool name="CanQuery">false</bool>
+					<bool name="CanTouch">false</bool>
+					<bool name="CastShadow">true</bool>
+					<string name="CollisionGroup">Default</string>
+					<int name="CollisionGroupId">0</int>
+					<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+					<PhysicalProperties name="CustomPhysicalProperties">
+						<CustomPhysics>false</CustomPhysics>
+					</PhysicalProperties>
+					<bool name="EnableFluidForces">true</bool>
+					<float name="FrontParamA">-0.5</float>
+					<float name="FrontParamB">0.5</float>
+					<token name="FrontSurface">0</token>
+					<token name="FrontSurfaceInput">0</token>
+					<float name="LeftParamA">-0.5</float>
+					<float name="LeftParamB">0.5</float>
+					<token name="LeftSurface">0</token>
+					<token name="LeftSurfaceInput">0</token>
+					<bool name="Locked">false</bool>
+					<bool name="Massless">false</bool>
+					<token name="Material">256</token>
+					<string name="MaterialVariantSerialized"></string>
+					<CoordinateFrame name="PivotOffset">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+						<R00>1</R00>
+						<R01>0</R01>
+						<R02>0</R02>
+						<R10>0</R10>
+						<R11>1</R11>
+						<R12>0</R12>
+						<R20>0</R20>
+						<R21>0</R21>
+						<R22>1</R22>
+					</CoordinateFrame>
+					<float name="Reflectance">0</float>
+					<float name="RightParamA">-0.5</float>
+					<float name="RightParamB">0.5</float>
+					<token name="RightSurface">0</token>
+					<token name="RightSurfaceInput">0</token>
+					<int name="RootPriority">0</int>
+					<Vector3 name="RotVelocity">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<float name="TopParamA">-0.5</float>
+					<float name="TopParamB">0.5</float>
+					<token name="TopSurface">3</token>
+					<token name="TopSurfaceInput">0</token>
+					<float name="Transparency">1</float>
+					<Vector3 name="Velocity">
+						<X>0</X>
+						<Y>0</Y>
+						<Z>0</Z>
+					</Vector3>
+					<Vector3 name="size">
+						<X>1</X>
+						<Y>1</Y>
+						<Z>1</Z>
+					</Vector3>
+					<BinaryString name="AttributesSerialize">AgAAAAkAAABHZW5lcmF0ZWQDAQwAAABNdXNocm9vbVR5cGUCBwAAAE1vb25jYXA=</BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
+					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+					<string name="Name">SouthTrail_1</string>
+					<BinaryString name="SerializedOverrides"></BinaryString>
+					<int64 name="SourceAssetId">-1</int64>
+					<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
+					<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c5b</UniqueId>
+				</Properties>
 			</Item>
 		</Item>
 	</Item>
@@ -10506,11 +10833,9 @@ zNLfaoZA///+//PAj5CH]]></BinaryString>
 -- (HUD, sounds, visual effects). Gameplay decisions stay on the server.
 
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local GameConfig = require(ReplicatedStorage.Shared.GameConfig)
+local log = require(ReplicatedStorage.Shared.Log)
 
-if GameConfig.Debug then
-	print("[TheLastLight] Client started")
-end
+log("Client started")
 ]]></ProtectedString>
 						<bool name="Disabled">false</bool>
 						<Content name="LinkedSource"><null></null></Content>
@@ -11156,7 +11481,11 @@ local GameConfig = {
 	Debug = true,
 
 	-- Folders you build in Workspace (in Studio). Scripts find map objects by these names.
-	MapFolders = { "Map", "SafeZones" },
+	MapFolders = { "Map", "SafeZones", "MushroomSpawns" },
+
+	-- Mushroom pickup
+	PromptDistance = 8, -- how close (studs) the "Collect" prompt appears
+	CollectDistance = 12, -- server-side limit; a bit larger than PromptDistance to allow for lag
 }
 
 return GameConfig
@@ -11171,6 +11500,61 @@ return GameConfig
 					<int64 name="SourceAssetId">-1</int64>
 					<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 					<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00000c32</UniqueId>
+				</Properties>
+			</Item>
+			<Item class="ModuleScript" referent="RBX21D3D5D2E06041CABFBDF90919B3EB00">
+				<Properties>
+					<Content name="LinkedSource"><null></null></Content>
+					<ProtectedString name="Source"><![CDATA[-- Log: prints a debug message, but only while GameConfig.Debug is true.
+-- Usage: local log = require(ReplicatedStorage.Shared.Log); log("Something happened", value)
+
+local GameConfig = require(script.Parent.GameConfig)
+
+return function(...)
+	if GameConfig.Debug then
+		print("[TheLastLight]", ...)
+	end
+end
+]]></ProtectedString>
+					<string name="ScriptGuid">{CDFDF90F-F98E-4A22-BBCF-4418313DF9BE}</string>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
+					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+					<string name="Name">Log</string>
+					<BinaryString name="SerializedOverrides"></BinaryString>
+					<int64 name="SourceAssetId">-1</int64>
+					<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
+					<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c34</UniqueId>
+				</Properties>
+			</Item>
+			<Item class="ModuleScript" referent="RBX995F231A275548668ABF1F8F1A783A53">
+				<Properties>
+					<Content name="LinkedSource"><null></null></Content>
+					<ProtectedString name="Source"><![CDATA[-- MushroomConfig: the stats and look of every mushroom type, keyed by type name.
+-- A spawn marker's "MushroomType" attribute must match one of these keys.
+-- Ember Morel and Guardian Cap are added in Milestone 7.
+
+return {
+	Mooncap = {
+		DisplayName = "Mooncap",
+		Points = 1,
+		CapColor = Color3.fromRGB(235, 225, 200), -- cream
+		StemColor = Color3.fromRGB(215, 210, 195),
+		GlowColor = Color3.fromRGB(120, 190, 255), -- soft blue
+	},
+}
+]]></ProtectedString>
+					<string name="ScriptGuid">{A2E4A5CE-67E7-4E1F-8087-F9EB8CABF740}</string>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
+					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+					<string name="Name">MushroomConfig</string>
+					<BinaryString name="SerializedOverrides"></BinaryString>
+					<int64 name="SourceAssetId">-1</int64>
+					<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
+					<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c36</UniqueId>
 				</Properties>
 			</Item>
 		</Item>
@@ -11211,16 +11595,14 @@ return GameConfig
 			<Item class="Script" referent="RBXCFBE06C74A444BECA4A43FB8E1A1FF54">
 				<Properties>
 					<ProtectedString name="Source"><![CDATA[-- Main: the starting point for all server-side game code.
--- For now it only checks that the Workspace map is set up the way later scripts expect.
+-- It checks the map, sets up each player's score and spawns the mushrooms.
 
+local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local GameConfig = require(ReplicatedStorage.Shared.GameConfig)
-
-local function debugPrint(...)
-	if GameConfig.Debug then
-		print("[TheLastLight]", ...)
-	end
-end
+local log = require(ReplicatedStorage.Shared.Log)
+local Score = require(script.Parent.Score)
+local MushroomService = require(script.Parent.MushroomService)
 
 -- Warns about any missing map folder, then reports how many safe zones exist.
 local function checkMap()
@@ -11232,12 +11614,19 @@ local function checkMap()
 
 	local safeZones = workspace:FindFirstChild("SafeZones")
 	if safeZones then
-		debugPrint("Safe zones found:", #safeZones:GetChildren())
+		log("Safe zones found:", #safeZones:GetChildren())
 	end
 end
 
 checkMap()
-debugPrint("Server started")
+
+Players.PlayerAdded:Connect(Score.setup)
+for _, player in Players:GetPlayers() do -- players who joined before this script ran
+	Score.setup(player)
+end
+
+MushroomService.spawnAll()
+log("Server started")
 ]]></ProtectedString>
 					<bool name="Disabled">false</bool>
 					<Content name="LinkedSource"><null></null></Content>
@@ -11252,6 +11641,187 @@ debugPrint("Server started")
 					<int64 name="SourceAssetId">-1</int64>
 					<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 					<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00000c34</UniqueId>
+				</Properties>
+			</Item>
+			<Item class="ModuleScript" referent="RBXFB61F726D5A74FDE84993C76228B75C8">
+				<Properties>
+					<Content name="LinkedSource"><null></null></Content>
+					<ProtectedString name="Source"><![CDATA[-- Score: keeps each player's round points.
+-- Points live in a "leaderstats" folder, which Roblox shows in the player list
+-- (top right). Only the server changes them, so clients can't fake a score.
+
+local Score = {}
+
+function Score.setup(player: Player)
+	local leaderstats = Instance.new("Folder")
+	leaderstats.Name = "leaderstats"
+
+	local points = Instance.new("IntValue")
+	points.Name = "Points"
+	points.Parent = leaderstats
+
+	leaderstats.Parent = player
+end
+
+function Score.add(player: Player, amount: number)
+	local leaderstats = player:FindFirstChild("leaderstats")
+	if leaderstats then
+		leaderstats.Points.Value += amount
+	end
+end
+
+return Score
+]]></ProtectedString>
+					<string name="ScriptGuid">{DD0C11A1-A22C-48F5-92C5-DC3058A803FF}</string>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
+					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+					<string name="Name">Score</string>
+					<BinaryString name="SerializedOverrides"></BinaryString>
+					<int64 name="SourceAssetId">-1</int64>
+					<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
+					<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c38</UniqueId>
+				</Properties>
+			</Item>
+			<Item class="ModuleScript" referent="RBXB42414E0623E4E7BBD4784C41F8FD110">
+				<Properties>
+					<Content name="LinkedSource"><null></null></Content>
+					<ProtectedString name="Source"><![CDATA[-- MushroomService: spawns mushrooms at the markers in Workspace.MushroomSpawns
+-- and handles collecting them. Every check happens here on the server.
+
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local GameConfig = require(ReplicatedStorage.Shared.GameConfig)
+local MushroomConfig = require(ReplicatedStorage.Shared.MushroomConfig)
+local log = require(ReplicatedStorage.Shared.Log)
+local Score = require(script.Parent.Score)
+
+local STEM_SIZE = Vector3.new(0.7, 1.6, 0.7)
+local CAP_SIZE = Vector3.new(2.6, 1.2, 2.6)
+
+local MushroomService = {}
+
+local activeFolder: Folder -- holds this round's mushrooms
+
+local function newPart(name: string, size: Vector3, cframe: CFrame, color: Color3, parent: Instance): Part
+	local part = Instance.new("Part")
+	part.Name = name
+	part.Size = size
+	part.CFrame = cframe
+	part.Color = color
+	part.Material = Enum.Material.SmoothPlastic
+	part.Anchored = true
+	part.CanCollide = false -- players walk through it instead of tripping on it
+	part.CastShadow = false
+	part.Parent = parent
+	return part
+end
+
+-- Builds a simple mushroom: a stem plus a squashed-sphere cap with a soft light.
+local function buildMushroom(config, groundPosition: Vector3): Model
+	local model = Instance.new("Model")
+	model.Name = config.DisplayName
+
+	local stemCFrame = CFrame.new(groundPosition + Vector3.new(0, STEM_SIZE.Y / 2, 0))
+	local stem = newPart("Stem", STEM_SIZE, stemCFrame, config.StemColor, model)
+	model.PrimaryPart = stem
+
+	local capCFrame = CFrame.new(groundPosition + Vector3.new(0, STEM_SIZE.Y + CAP_SIZE.Y / 4, 0))
+	local cap = newPart("Cap", CAP_SIZE, capCFrame, config.CapColor, model)
+	local mesh = Instance.new("SpecialMesh") -- turns the block into a smooth dome shape
+	mesh.MeshType = Enum.MeshType.Sphere
+	mesh.Parent = cap
+
+	local light = Instance.new("PointLight")
+	light.Color = config.GlowColor
+	light.Brightness = 1
+	light.Range = 8
+	light.Parent = cap
+
+	return model
+end
+
+-- True if the player is alive and standing close enough to the mushroom.
+local function canReach(player: Player, position: Vector3): boolean
+	local character = player.Character
+	local humanoid = character and character:FindFirstChildOfClass("Humanoid")
+	local root = character and character:FindFirstChild("HumanoidRootPart")
+	if not (humanoid and root and humanoid.Health > 0) then
+		return false
+	end
+	return (root.Position - position).Magnitude <= GameConfig.CollectDistance
+end
+
+local function onCollect(player: Player, model: Model, config)
+	-- Already collected? (Destroyed models have no parent.) This stops double pickups.
+	if not model.Parent then
+		return
+	end
+	if not canReach(player, model.PrimaryPart.Position) then
+		return
+	end
+	-- Milestone 3 adds: only allow collecting during the gather phases.
+
+	model:Destroy()
+	Score.add(player, config.Points)
+	log(player.Name, "collected", config.DisplayName, "+" .. config.Points)
+end
+
+local function spawnAt(marker: BasePart)
+	local kind = marker:GetAttribute("MushroomType")
+	local config = MushroomConfig[kind]
+	if not config then
+		warn("[TheLastLight] Unknown MushroomType on " .. marker:GetFullName() .. ": " .. tostring(kind))
+		return
+	end
+
+	local groundPosition = marker.Position - Vector3.new(0, marker.Size.Y / 2, 0)
+	local model = buildMushroom(config, groundPosition)
+
+	local prompt = Instance.new("ProximityPrompt")
+	prompt.ActionText = "Collect"
+	prompt.ObjectText = config.DisplayName
+	prompt.MaxActivationDistance = GameConfig.PromptDistance
+	prompt.RequiresLineOfSight = false
+	prompt.Parent = model.PrimaryPart
+	prompt.Triggered:Connect(function(player)
+		onCollect(player, model, config)
+	end)
+
+	model.Parent = activeFolder
+end
+
+-- Removes any leftover mushrooms and spawns a fresh one at every marker.
+function MushroomService.spawnAll()
+	if activeFolder then
+		activeFolder:Destroy() -- also disconnects the old prompts' events
+	end
+	activeFolder = Instance.new("Folder")
+	activeFolder.Name = "Mushrooms"
+	activeFolder.Parent = workspace
+
+	local spawns = workspace:FindFirstChild("MushroomSpawns")
+	if not spawns then
+		return -- Main already warns about the missing folder
+	end
+	for _, marker in spawns:GetChildren() do
+		spawnAt(marker)
+	end
+	log("Mushrooms spawned:", #activeFolder:GetChildren())
+end
+
+return MushroomService
+]]></ProtectedString>
+					<string name="ScriptGuid">{FA6BEB20-F77C-4ABD-B480-4161C872CDB9}</string>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+					<bool name="DefinesCapabilities">false</bool>
+					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
+					<string name="Name">MushroomService</string>
+					<BinaryString name="SerializedOverrides"></BinaryString>
+					<int64 name="SourceAssetId">-1</int64>
+					<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
+					<UniqueId name="UniqueId">5ca8ef1b1960c1ec0b0eb6ad00001c3a</UniqueId>
 				</Properties>
 			</Item>
 		</Item>
@@ -11352,6 +11922,14 @@ local LANDMARKS = {
 		{ Name = "GatePost", Size = Vector3.new(1.5, 12, 1.5), Position = Vector3.new(7.5, 6, 85), Material = Enum.Material.Wood, Color = COLOR.DarkWood },
 		{ Name = "GateBeam", Size = Vector3.new(18, 1.5, 1.5), Position = Vector3.new(0, 12, 85), Material = Enum.Material.Wood, Color = COLOR.DarkWood },
 	},
+}
+
+-- Invisible markers where the server spawns mushrooms each round (Workspace.MushroomSpawns).
+-- Type must match a key in src/shared/MushroomConfig.luau.
+local MUSHROOM_SPAWNS = {
+	{ Name = "WestGrove_1", X = -86, Z = 9, Type = "Mooncap" },
+	{ Name = "WestGrove_2", X = -100, Z = -8, Type = "Mooncap" },
+	{ Name = "SouthTrail_1", X = 9, Z = 38, Type = "Mooncap" },
 }
 
 -- Trees grow in clusters. A fixed seed puts them in the same spots on every run.
@@ -11557,6 +12135,17 @@ local function buildTrees(map)
 	return #placed
 end
 
+-- Markers are 1-stud invisible cubes resting on the ground; the server reads their position and type.
+local function buildMushroomSpawns(folder)
+	for _, spawn in MUSHROOM_SPAWNS do
+		local marker = makePart({
+			Name = spawn.Name, Size = Vector3.one, Position = Vector3.new(spawn.X, 0.5, spawn.Z),
+			Transparency = 1, CanCollide = false, CanQuery = false, CanTouch = false,
+		}, folder)
+		marker:SetAttribute("MushroomType", spawn.Type)
+	end
+end
+
 -- Studio's Baseplate template adds these. They would overlap the new ground and spawn.
 local function removeTemplateObjects()
 	for _, name in { "Baseplate", "SpawnLocation" } do
@@ -11571,16 +12160,19 @@ end
 return function()
 	local map = getFolder(workspace, "Map")
 	local safeZones = getFolder(workspace, "SafeZones")
-	clearGenerated(map)
-	clearGenerated(safeZones)
+	local mushroomSpawns = getFolder(workspace, "MushroomSpawns")
+	for _, container in { map, safeZones, mushroomSpawns } do
+		clearGenerated(container)
+	end
 	removeTemplateObjects()
 
 	buildGround(map)
 	buildSafeZones(safeZones)
 	buildAreasAndLandmarks(map)
+	buildMushroomSpawns(mushroomSpawns)
 	local treeCount = buildTrees(map)
 
-	print(("[BuildBlockout] Done: %d safe zones, %d trees. Save the place with Ctrl+S."):format(#SAFE_ZONES, treeCount))
+	print(("[BuildBlockout] Done: %d safe zones, %d mushroom spawns, %d trees. Save the place with Ctrl+S."):format(#SAFE_ZONES, #MUSHROOM_SPAWNS, treeCount))
 end
 ]]></ProtectedString>
 					<string name="ScriptGuid">{8EF9C9D7-47B1-4476-BDE8-E2C74A20773D}</string>

@@ -35,12 +35,12 @@ A round is 4 cycles. Survive until dawn to earn a bonus. If you're caught, you s
 
 ## Status
 
-Early setup. Rojo sync works, and the gameplay code has not been written yet.
+Prototype. The map blockout is generated, and players can collect Mooncaps for points (checked by the server, shown in the player list). Round phases come next.
 
 ## Roadmap
 
-- [ ] Map blockout (trails, camp, safe-light clearings)
-- [ ] First mushroom pickup with a server-side score
+- [x] Map blockout (trails, camp, safe-light clearings)
+- [x] First mushroom pickup with a server-side score
 - [ ] Round phases and HUD
 - [ ] Lighting that changes with each phase
 - [ ] Safe-zone detection
