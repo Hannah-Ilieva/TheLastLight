@@ -1,0 +1,16 @@
+# Roblox Studio lock files (created while a place is open, in any folder)
+*.rbxl.lock
+*.rbxlx.lock
+
+# Rojo
+sourcemap.json
+/build/
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Blender backups and autosaves (keep the .blend originals)
+*.blend1
+*.blend2
+*.blend@
