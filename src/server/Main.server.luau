@@ -9,6 +9,8 @@ local Score = require(script.Parent.Score)
 local PlayerState = require(script.Parent.PlayerState)
 local SafeZoneService = require(script.Parent.SafeZoneService)
 local MonsterService = require(script.Parent.MonsterService)
+local PowerService = require(script.Parent.PowerService)
+local SkinService = require(script.Parent.SkinService)
 local RoundService = require(script.Parent.RoundService)
 
 -- Warns about any map folder that is missing from Workspace.
@@ -22,6 +24,7 @@ end
 
 local function onPlayerAdded(player: Player)
 	Score.setup(player)
+	SkinService.setup(player)
 	PlayerState.setup(player) -- also spawns their character
 end
 
@@ -34,6 +37,8 @@ for _, player in Players:GetPlayers() do -- players who joined before this scrip
 end
 
 SafeZoneService.start()
+PowerService.start()
+SkinService.start()
 MonsterService.start()
 RoundService.start() -- also spawns the mushrooms at the start of each round
 log("Server started")

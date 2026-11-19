@@ -12,6 +12,7 @@ local log = require(ReplicatedStorage.Shared.Log)
 local Score = require(script.Parent.Score)
 local MushroomService = require(script.Parent.MushroomService)
 local PlayerState = require(script.Parent.PlayerState)
+local PowerService = require(script.Parent.PowerService)
 
 local CHECK_INTERVAL = 0.25 -- how often a phase checks whether everyone was caught
 
@@ -36,16 +37,31 @@ local function runPhase(phase: string, cycle: number, canEndEarly: boolean?): bo
 	return true
 end
 
--- Fresh mushrooms, scores back to 0, nobody caught, everyone back at the trailhead.
+-- Fresh mushrooms, scores back to 0, no powers, nobody caught, everyone back at the trailhead.
 local function resetRound()
 	MushroomService.spawnAll()
 	for _, player in Players:GetPlayers() do
 		Score.reset(player)
+		PowerService.clear(player)
 	end
 	PlayerState.resetRound()
 end
 
+-- Gives every player who is still in the woods (not caught) a bonus.
+-- `stat` (optional) also counts the event in that round stat.
+local function rewardSurvivors(amount: number, stat: string?)
+	for _, player in Players:GetPlayers() do
+		if not player:GetAttribute("Caught") then
+			Score.addBonus(player, amount)
+			if stat then
+				Score.addStat(player, stat, 1)
+			end
+		end
+	end
+end
+
 -- Plays every night of the round, stopping early if everyone is caught.
+-- Survivors earn a bonus after each blackout and a bigger one at dawn.
 local function runNights()
 	for cycle = 1, GameConfig.CyclesPerRound do
 		for _, phase in GameConfig.CyclePhases do
@@ -53,8 +69,16 @@ local function runNights()
 				log("Everyone was caught - ending the round early")
 				return
 			end
+			if phase == "Blackout" then
+				rewardSurvivors(GameConfig.Bonus.PerBlackout, "RoundBlackouts")
+			end
 		end
 	end
+	rewardSurvivors(GameConfig.Bonus.Dawn)
+	for _, player in Players:GetPlayers() do
+		player:SetAttribute("SurvivedDawn", not player:GetAttribute("Caught"))
+	end
+	log("Dawn: survivors rewarded")
 end
 
 local function runRound()

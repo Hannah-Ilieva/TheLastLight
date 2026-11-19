@@ -1,6 +1,8 @@
--- MonsterService: the placeholder monster (a tall dark block with glowing eyes).
+-- MonsterService: the Hollow Stag (its look is built by MonsterModel).
 -- States:
---   Hidden    - not in the world (every phase except Blackout)
+--   Hidden    - not in the world (Lobby, Gather, Release, Results)
+--   Stalking  - during the Warning it stands still at a distant den, facing the players,
+--               and growls. A warning glimpse only: it cannot catch anyone yet.
 --   Hunting   - during Blackout it appears at a den and chases the nearest player
 --               who is outside every safe light
 --   Searching - if nobody can be chased, it walks to where it last saw someone, then waits
@@ -14,13 +16,17 @@ local GameConfig = require(ReplicatedStorage.Shared.GameConfig)
 local log = require(ReplicatedStorage.Shared.Log)
 local SafeZoneService = require(script.Parent.SafeZoneService)
 local PlayerState = require(script.Parent.PlayerState)
+local PowerService = require(script.Parent.PowerService)
+local MonsterModel = require(script.Parent.MonsterModel)
 
 local CONFIG = GameConfig.Monster
-local BODY_SIZE = Vector3.new(3, 9, 3)
 local RETARGET_INTERVAL = 0.5 -- seconds between "who is nearest?" checks
 local PAUSE_AFTER_CATCH = 1.5 -- seconds it stands still after catching someone
 local SAFE_ZONE_MARGIN = 2 -- keeps its body outside the light, not just its centre
 local STEER_ANGLES = { 0, 45, -45, 90, -90 } -- directions tried when a safe light blocks the way
+local STALK_EXTRA_DISTANCE = 20 -- while stalking it stays this much farther away than MinSpawnDistance
+local GROWL_INTERVAL = NumberRange.new(5, 9) -- seconds between growls while hunting
+local STRIDE_BOB = 0.18 -- how much it rises and falls with each step (studs)
 
 local MonsterService = {}
 
@@ -30,37 +36,9 @@ local target: Player?
 local lastSeenPosition: Vector3?
 local retargetTimer = 0
 local pausedUntil = 0
-
-local function buildMonster(): Model
-	local model = Instance.new("Model")
-	model.Name = "Monster"
-	model.ModelStreamingMode = Enum.ModelStreamingMode.Persistent -- visible from far away
-
-	local function addPart(name, size, offset, color, material)
-		local part = Instance.new("Part")
-		part.Name = name
-		part.Size = size
-		part.CFrame = CFrame.new(offset)
-		part.Color = color
-		part.Material = material
-		part.Anchored = true
-		part.CanCollide = false
-		part.Parent = model
-		return part
-	end
-	model.PrimaryPart = addPart("Body", BODY_SIZE, Vector3.zero, Color3.fromRGB(15, 15, 20), Enum.Material.SmoothPlastic)
-	local eyeColor = Color3.fromRGB(200, 255, 230)
-	addPart("LeftEye", Vector3.new(0.9, 0.45, 0.2), Vector3.new(-0.7, 3.4, -1.55), eyeColor, Enum.Material.Neon)
-	addPart("RightEye", Vector3.new(0.9, 0.45, 0.2), Vector3.new(0.7, 3.4, -1.55), eyeColor, Enum.Material.Neon)
-
-	-- A faint glow from the eyes so its shape shows in the dark, without lighting up the area.
-	local glow = Instance.new("PointLight")
-	glow.Color = eyeColor
-	glow.Range = 10
-	glow.Brightness = 0.8
-	glow.Parent = model.PrimaryPart
-	return model
-end
+local nextGrowlAt = 0
+local walked = 0 -- distance walked, drives the stepping bob
+local rng = Random.new()
 
 local function getRoot(player: Player): BasePart?
 	local character = player.Character
@@ -91,10 +69,10 @@ local function nearestPrey(from: Vector3): Player?
 	return best
 end
 
--- Picks a den that is at least MinSpawnDistance from EVERY player, as close as possible
+-- Picks a den that is at least `minDistance` from EVERY player, as close as possible
 -- to a chaseable player. If everyone is safe, it lurks at the den closest to anyone,
 -- ready for whoever steps out of the light. If no den is far enough, the farthest one.
-local function chooseDen(): Vector3?
+local function chooseDen(minDistance: number): Vector3?
 	local folder = workspace:FindFirstChild("MonsterSpawns")
 	if not folder then
 		return nil
@@ -115,7 +93,7 @@ local function chooseDen(): Vector3?
 		end
 		-- If anyone can be chased, every den has a prey distance; otherwise use any player.
 		local closeness = if nearestPreyDistance < math.huge then nearestPreyDistance else nearestPlayer
-		if nearestPlayer >= CONFIG.MinSpawnDistance and closeness < bestCloseness then
+		if nearestPlayer >= minDistance and closeness < bestCloseness then
 			best, bestCloseness = den, closeness
 		end
 		if nearestPlayer > farthestDistance then
@@ -133,16 +111,62 @@ local function moveToward(position: Vector3, direction: Vector3, distance: numbe
 		local turned = CFrame.Angles(0, math.rad(angle), 0):VectorToWorldSpace(direction)
 		local nextPosition = position + turned * distance
 		if not SafeZoneService.isInsideZone(nextPosition, SAFE_ZONE_MARGIN) then
-			monster:PivotTo(CFrame.lookAt(nextPosition, nextPosition + turned))
+			walked += distance
+			local bob = math.abs(math.sin(walked * 0.9)) * STRIDE_BOB
+			local standing = Vector3.new(nextPosition.X, MonsterModel.ROOT_HEIGHT + bob, nextPosition.Z)
+			monster:PivotTo(CFrame.lookAt(standing, standing + turned))
 			return
 		end
 	end
+end
+
+-- A Guardian Cap blocked the catch: the monster is thrown back (never into a light)
+-- and stands still for a moment, giving the player time to run.
+local function knockBack(position: Vector3, playerPosition: Vector3)
+	local away = Vector3.new(position.X - playerPosition.X, 0, position.Z - playerPosition.Z)
+	if away.Magnitude > 0.1 then
+		local landing = position + away.Unit * GameConfig.Powers.ShieldKnockback
+		if not SafeZoneService.isInsideZone(landing, SAFE_ZONE_MARGIN) then
+			monster:PivotTo(CFrame.lookAt(landing, Vector3.new(playerPosition.X, landing.Y, playerPosition.Z)))
+		end
+	end
+	pausedUntil = os.clock() + GameConfig.Powers.ShieldStunSeconds
+end
+
+local function growl()
+	local sound = monster:FindFirstChild("Growl", true)
+	if sound then
+		sound:Play()
+	end
+	nextGrowlAt = os.clock() + rng:NextNumber(GROWL_INTERVAL.Min, GROWL_INTERVAL.Max)
+end
+
+-- Puts the monster at a den, turned toward the nearest player.
+local function appearAt(den: Vector3)
+	local standing = Vector3.new(den.X, MonsterModel.ROOT_HEIGHT, den.Z)
+	local facing = standing - Vector3.new(0, 0, 1)
+	local nearest, nearestDistance = nil, math.huge
+	for _, player in Players:GetPlayers() do
+		local root = getRoot(player)
+		if root and flatDistance(root.Position, standing) < nearestDistance then
+			nearest, nearestDistance = root, flatDistance(root.Position, standing)
+		end
+	end
+	if nearest then
+		facing = Vector3.new(nearest.Position.X, standing.Y, nearest.Position.Z)
+	end
+	monster:PivotTo(CFrame.lookAt(standing, facing))
+	monster.Parent = workspace
 end
 
 -- Runs every frame during Blackout.
 local function step(dt: number)
 	if os.clock() < pausedUntil then
 		return
+	end
+
+	if os.clock() >= nextGrowlAt then
+		growl()
 	end
 
 	retargetTimer -= dt
@@ -162,9 +186,14 @@ local function step(dt: number)
 	local position = monster:GetPivot().Position
 	local distance = flatDistance(lastSeenPosition, position)
 	if root and distance <= CONFIG.CatchDistance then
-		PlayerState.catch(target)
+		if PowerService.absorbCatch(target) then
+			knockBack(position, root.Position)
+		else
+			PlayerState.catch(target)
+			PowerService.clear(target)
+			pausedUntil = os.clock() + PAUSE_AFTER_CATCH
+		end
 		target, lastSeenPosition = nil, nil
-		pausedUntil = os.clock() + PAUSE_AFTER_CATCH
 		return
 	end
 	if distance < 1 then
@@ -178,36 +207,56 @@ local function step(dt: number)
 	moveToward(position, flatOffset.Unit, math.min(speed * dt, distance))
 end
 
-local function startHunt()
-	local den = chooseDen()
-	if not den then
-		warn("[TheLastLight] No monster dens in Workspace.MonsterSpawns")
-		return
-	end
-	target, lastSeenPosition, retargetTimer, pausedUntil = nil, nil, 0, 0
-	monster:PivotTo(CFrame.new(den.X, BODY_SIZE.Y / 2, den.Z))
-	monster.Parent = workspace
-	huntConnection = RunService.Heartbeat:Connect(step)
-	log("Monster is hunting from", den)
-end
-
 local function stopHunt()
 	if huntConnection then
 		huntConnection:Disconnect()
 		huntConnection = nil
 	end
-	monster.Parent = nil
 	target, lastSeenPosition = nil, nil
-	log("Monster retreated")
+end
+
+local function hide()
+	stopHunt()
+	if monster.Parent then
+		monster.Parent = nil
+		log("Monster retreated")
+	end
+end
+
+-- Warning: a distant glimpse and a growl, but no hunting yet.
+local function startStalking()
+	local den = chooseDen(CONFIG.MinSpawnDistance + STALK_EXTRA_DISTANCE)
+	if den then
+		appearAt(den)
+		growl()
+		log("Monster is stalking from", den)
+	end
+end
+
+local function startHunt()
+	local den = chooseDen(CONFIG.MinSpawnDistance)
+	if not den then
+		warn("[TheLastLight] No monster dens in Workspace.MonsterSpawns")
+		return
+	end
+	stopHunt()
+	target, lastSeenPosition, retargetTimer, pausedUntil = nil, nil, 0, 0
+	appearAt(den)
+	growl()
+	huntConnection = RunService.Heartbeat:Connect(step)
+	log("Monster is hunting from", den)
 end
 
 function MonsterService.start()
-	monster = buildMonster()
+	monster = MonsterModel.build()
 	ReplicatedStorage:GetAttributeChangedSignal("Phase"):Connect(function()
-		if ReplicatedStorage:GetAttribute("Phase") == "Blackout" then
+		local phase = ReplicatedStorage:GetAttribute("Phase")
+		if phase == "Blackout" then
 			startHunt()
-		elseif huntConnection then
-			stopHunt()
+		elseif phase == "Warning" then
+			startStalking()
+		else
+			hide()
 		end
 	end)
 end

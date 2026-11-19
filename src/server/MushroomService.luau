@@ -1,56 +1,19 @@
 -- MushroomService: spawns mushrooms at the markers in Workspace.MushroomSpawns
--- and handles collecting them. Every check happens here on the server.
+-- (their look comes from MushroomModels) and handles collecting them.
+-- Every check happens here on the server.
 
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local GameConfig = require(ReplicatedStorage.Shared.GameConfig)
 local MushroomConfig = require(ReplicatedStorage.Shared.MushroomConfig)
 local log = require(ReplicatedStorage.Shared.Log)
 local Score = require(script.Parent.Score)
-
-local STEM_SIZE = Vector3.new(0.7, 1.6, 0.7)
-local CAP_SIZE = Vector3.new(2.6, 1.2, 2.6)
+local PowerService = require(script.Parent.PowerService)
+local Remotes = require(script.Parent.Remotes)
+local MushroomModels = require(script.Parent.MushroomModels)
 
 local MushroomService = {}
 
 local activeFolder: Folder -- holds this round's mushrooms
-
-local function newPart(name: string, size: Vector3, cframe: CFrame, color: Color3, parent: Instance): Part
-	local part = Instance.new("Part")
-	part.Name = name
-	part.Size = size
-	part.CFrame = cframe
-	part.Color = color
-	part.Material = Enum.Material.SmoothPlastic
-	part.Anchored = true
-	part.CanCollide = false -- players walk through it instead of tripping on it
-	part.CastShadow = false
-	part.Parent = parent
-	return part
-end
-
--- Builds a simple mushroom: a stem plus a squashed-sphere cap with a soft light.
-local function buildMushroom(config, groundPosition: Vector3): Model
-	local model = Instance.new("Model")
-	model.Name = config.DisplayName
-
-	local stemCFrame = CFrame.new(groundPosition + Vector3.new(0, STEM_SIZE.Y / 2, 0))
-	local stem = newPart("Stem", STEM_SIZE, stemCFrame, config.StemColor, model)
-	model.PrimaryPart = stem
-
-	local capCFrame = CFrame.new(groundPosition + Vector3.new(0, STEM_SIZE.Y + CAP_SIZE.Y / 4, 0))
-	local cap = newPart("Cap", CAP_SIZE, capCFrame, config.CapColor, model)
-	local mesh = Instance.new("SpecialMesh") -- turns the block into a smooth dome shape
-	mesh.MeshType = Enum.MeshType.Sphere
-	mesh.Parent = cap
-
-	local light = Instance.new("PointLight")
-	light.Color = config.GlowColor
-	light.Brightness = 1
-	light.Range = 8
-	light.Parent = cap
-
-	return model
-end
 
 -- True during the phases listed in GameConfig.CollectPhases (RoundService sets the phase).
 local function isCollectPhase(): boolean
@@ -68,7 +31,8 @@ local function canReach(player: Player, position: Vector3): boolean
 	return (root.Position - position).Magnitude <= GameConfig.CollectDistance
 end
 
-local function onCollect(player: Player, model: Model, config)
+local function onCollect(player: Player, model: Model, kind: string)
+	local config = MushroomConfig[kind]
 	-- Already collected? (Destroyed models have no parent.) This stops double pickups.
 	if not model.Parent then
 		return
@@ -76,9 +40,21 @@ local function onCollect(player: Player, model: Model, config)
 	if not isCollectPhase() or not canReach(player, model.PrimaryPart.Position) then
 		return
 	end
+	-- Only one unused power at a time; point-only mushrooms are always fine.
+	if config.Power and not PowerService.canCarry(player) then
+		local held = MushroomConfig[player:GetAttribute("Power")]
+		Remotes.Notify:FireClient(player, "info", "Your hands are full", "Use your " .. held.DisplayName .. " first.")
+		return
+	end
 
 	model:Destroy()
 	Score.add(player, config.Points)
+	Score.addStat(player, "RoundMushrooms", 1)
+	if config.Power then
+		PowerService.give(player, kind)
+	end
+	local style = config.Power and "rare" or "pickup"
+	Remotes.Notify:FireClient(player, style, ("%s  +%d"):format(config.DisplayName, config.Points), config.Description)
 	log(player.Name, "collected", config.DisplayName, "+" .. config.Points)
 end
 
@@ -91,7 +67,7 @@ local function spawnAt(marker: BasePart)
 	end
 
 	local groundPosition = marker.Position - Vector3.new(0, marker.Size.Y / 2, 0)
-	local model = buildMushroom(config, groundPosition)
+	local model = MushroomModels.build(kind, config, groundPosition)
 
 	local prompt = Instance.new("ProximityPrompt")
 	prompt.ActionText = "Collect"
@@ -101,7 +77,7 @@ local function spawnAt(marker: BasePart)
 	prompt.Enabled = isCollectPhase()
 	prompt.Parent = model.PrimaryPart
 	prompt.Triggered:Connect(function(player)
-		onCollect(player, model, config)
+		onCollect(player, model, kind)
 	end)
 
 	model.Parent = activeFolder

@@ -32,6 +32,25 @@ local GameConfig = {
 	-- so what players see always matches what the server checks.
 	SafeZonePhases = { Warning = true, Blackout = true },
 
+	-- Survival bonus points: a little for every blackout survived, more for reaching dawn.
+	-- Caught players keep the points and bonuses they already earned.
+	Bonus = {
+		PerBlackout = 1,
+		Dawn = 5,
+	},
+
+	-- Phases in which players may change their look in the wardrobe (see SkinConfig).
+	WardrobePhases = { Lobby = true, Results = true },
+
+	-- Power mushrooms (see MushroomConfig). A player carries at most one unused power.
+	Powers = {
+		UsePhases = { Exploring = true, Warning = true, Blackout = true, Release = true },
+		SpeedBoostWalkSpeed = 26, -- normal walking speed is 16
+		SpeedBoostSeconds = 4,
+		ShieldKnockback = 12, -- studs the monster is pushed back when a Guardian Cap blocks it
+		ShieldStunSeconds = 2.5, -- how long the monster stands still after hitting a shield
+	},
+
 	-- The monster hunts only during Blackout.
 	Monster = {
 		SpeedByNight = { 11, 13, 14, 15 }, -- studs per second; players walk at 16, so running away works

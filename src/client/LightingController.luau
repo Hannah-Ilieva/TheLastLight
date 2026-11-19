@@ -1,11 +1,14 @@
--- LightingController: changes the sky, fog, path lamps and safe-light circles to match
--- the round phase. It runs on each player's computer because lighting is purely visual:
--- it reacts to the Phase attribute that RoundService sets, and never decides anything.
--- (Safety in the dark is checked by the server's safe-zone code, not by these lights.)
+-- LightingController: changes the sky, fog, colour grading, path lamps and safe lights
+-- to match the round phase. It runs on each player's computer because lighting is purely
+-- visual: it reacts to the Phase attribute that RoundService sets, and never decides
+-- anything. (Safety in the dark is checked by the server's safe-zone code.)
 --
--- Safe-light circles stay hidden until the Warning, so players can't just wait beside
--- them; they must remember where the refuges are and run when the song fades.
+-- Safe lights stay hidden until the Warning, so players can't just wait beside them;
+-- they must remember where the refuges are and run when the song fades. Every piece of
+-- a safe light that glows (floor circle, runes, beacon flame, fireflies, hum) is tagged
+-- "SafeGlow" by the map generator.
 
+local CollectionService = game:GetService("CollectionService")
 local Lighting = game:GetService("Lighting")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local TweenService = game:GetService("TweenService")
@@ -15,20 +18,24 @@ local function rgb(r, g, b)
 	return Color3.fromRGB(r, g, b)
 end
 
--- Looks for each phase. "Lighting" values go on the Lighting service, "Atmosphere"
--- values on its Atmosphere (which controls the fog).
+-- Looks for each phase. "Lighting" values go on the Lighting service, "Atmosphere" on
+-- its Atmosphere (the fog) and "Grade" on the colour correction effect.
 local PRESETS = {
 	Night = {
-		Lighting = { ClockTime = 0, Brightness = 1, Ambient = rgb(30, 40, 45), OutdoorAmbient = rgb(60, 90, 95), ExposureCompensation = 0 },
+		Lighting = { ClockTime = 0, Brightness = 1, Ambient = rgb(30, 40, 45), OutdoorAmbient = rgb(60, 88, 92), ExposureCompensation = 0 },
 		Atmosphere = { Density = 0.4, Offset = 0.1, Color = rgb(60, 105, 105), Decay = rgb(25, 45, 50), Haze = 1 },
+		Grade = { Brightness = 0, Contrast = 0.12, Saturation = -0.1, TintColor = rgb(220, 235, 240) },
 	},
+	-- Dark, but trees still stand out as silhouettes against slightly lighter fog.
 	Blackout = {
-		Lighting = { ClockTime = 0, Brightness = 0.3, Ambient = rgb(14, 18, 22), OutdoorAmbient = rgb(28, 38, 44), ExposureCompensation = -0.25 },
-		Atmosphere = { Density = 0.5, Offset = 0.1, Color = rgb(20, 32, 36), Decay = rgb(8, 14, 16), Haze = 1 },
+		Lighting = { ClockTime = 0, Brightness = 0.3, Ambient = rgb(16, 20, 26), OutdoorAmbient = rgb(30, 40, 48), ExposureCompensation = -0.2 },
+		Atmosphere = { Density = 0.45, Offset = 0.1, Color = rgb(30, 46, 54), Decay = rgb(12, 20, 24), Haze = 1 },
+		Grade = { Brightness = -0.02, Contrast = 0.22, Saturation = -0.35, TintColor = rgb(195, 210, 230) },
 	},
 	Dawn = {
 		Lighting = { ClockTime = 6.4, Brightness = 2, Ambient = rgb(90, 85, 80), OutdoorAmbient = rgb(150, 140, 125), ExposureCompensation = 0 },
 		Atmosphere = { Density = 0.3, Offset = 0.2, Color = rgb(200, 190, 170), Decay = rgb(150, 130, 110), Haze = 0.5 },
+		Grade = { Brightness = 0.02, Contrast = 0.05, Saturation = 0, TintColor = rgb(255, 240, 220) },
 	},
 }
 local PHASE_PRESET = {
@@ -47,11 +54,11 @@ local FADE_SECONDS = {
 }
 local DEFAULT_FADE = 1.5
 
--- Safe-light circles are shown in GameConfig.SafeZonePhases (the same phases in which
--- the server protects players).
+-- Safe lights are shown in GameConfig.SafeZonePhases (the same phases in which the
+-- server protects players).
 local SAFE_ZONE_PHASES = GameConfig.SafeZonePhases
-local SAFE_ZONE_TRANSPARENCY = 0.5 -- how see-through a shown circle is (1 = invisible)
-local SAFE_ZONE_REVEAL_SECONDS = 0.5
+local SAFE_GLOW_TAG = "SafeGlow"
+local SAFE_GLOW_REVEAL_SECONDS = 0.5
 
 -- Warning flicker: each tick, every lamp has a chance to blink off. The chance grows
 -- from MIN to MAX as the warning runs out, so flicker gets faster (but never strobes).
@@ -63,7 +70,6 @@ local LightingController = {}
 
 local currentPhase: string? = nil
 local pathLights: Folder
-local safeZones: Folder
 local rng = Random.new()
 
 local function tweenTo(target: Instance, properties, seconds: number)
@@ -88,21 +94,29 @@ local function setAllLamps(on: boolean)
 	end
 end
 
--- Fades a safe-light circle in or out. Its light switches with it.
-local function setSafeZone(disc: Instance, visible: boolean, fade: number)
-	if not disc:IsA("BasePart") then
-		return
+-- Shows or hides one glowing piece of a safe light: the part fades to its
+-- "GlowTransparency", and its lights, particles and sounds switch with it.
+local function setGlow(item: Instance, visible: boolean, fade: number)
+	if item:IsA("BasePart") then
+		local shown = item:GetAttribute("GlowTransparency") or 0
+		tweenTo(item, { Transparency = visible and shown or 1 }, fade)
 	end
-	tweenTo(disc, { Transparency = visible and SAFE_ZONE_TRANSPARENCY or 1 }, fade)
-	local light = disc:FindFirstChildOfClass("PointLight")
-	if light then
-		light.Enabled = visible
+	for _, child in item:GetDescendants() do
+		if child:IsA("Light") or child:IsA("ParticleEmitter") then
+			child.Enabled = visible
+		elseif child:IsA("Sound") then
+			if visible and not child.IsPlaying then
+				child:Play()
+			elseif not visible then
+				child:Stop()
+			end
+		end
 	end
 end
 
-local function setAllSafeZones(visible: boolean, fade: number)
-	for _, disc in safeZones:GetChildren() do
-		setSafeZone(disc, visible, fade)
+local function setAllSafeGlow(visible: boolean, fade: number)
+	for _, item in CollectionService:GetTagged(SAFE_GLOW_TAG) do
+		setGlow(item, visible, fade)
 	end
 end
 
@@ -131,14 +145,18 @@ local function applyPhase(phase: string, instant: boolean)
 	if atmosphere then
 		tweenTo(atmosphere, preset.Atmosphere, fade)
 	end
+	local grade = Lighting:FindFirstChild("Grade")
+	if grade then
+		tweenTo(grade, preset.Grade, fade)
+	end
 
 	setAllLamps(phase ~= "Blackout")
-	local showSafeZones = SAFE_ZONE_PHASES[phase] == true
-	local zoneFade = fade -- hide at the same speed as the lighting change...
-	if showSafeZones and not instant then
-		zoneFade = SAFE_ZONE_REVEAL_SECONDS -- ...but reveal quickly, so players can react
+	local showSafeLights = SAFE_ZONE_PHASES[phase] == true
+	local glowFade = fade -- hide at the same speed as the lighting change...
+	if showSafeLights and not instant then
+		glowFade = SAFE_GLOW_REVEAL_SECONDS -- ...but reveal quickly, so players can react
 	end
-	setAllSafeZones(showSafeZones, zoneFade)
+	setAllSafeGlow(showSafeLights, glowFade)
 	if phase == "Warning" then
 		task.spawn(flicker)
 	end
@@ -146,13 +164,12 @@ end
 
 function LightingController.start()
 	pathLights = workspace:WaitForChild("PathLights")
-	safeZones = workspace:WaitForChild("SafeZones")
 	-- Anything that loads in late (streaming) should match the current phase.
 	pathLights.ChildAdded:Connect(function(lamp)
 		setLamp(lamp, currentPhase ~= "Blackout")
 	end)
-	safeZones.ChildAdded:Connect(function(disc)
-		setSafeZone(disc, SAFE_ZONE_PHASES[currentPhase] == true, 0)
+	CollectionService:GetInstanceAddedSignal(SAFE_GLOW_TAG):Connect(function(item)
+		setGlow(item, SAFE_ZONE_PHASES[currentPhase] == true, 0)
 	end)
 
 	ReplicatedStorage:GetAttributeChangedSignal("Phase"):Connect(function()
